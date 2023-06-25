@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@clerk/types": "^3.46.0",
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.16.18",
+    "nuxt": "^3.6.0",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "@clerk/backend": "^0.23.5",
+    "@clerk/clerk-js": "^4.50.1",
+    "@clerk/clerk-sdk-node": "^4.10.12"
+  }
+}
