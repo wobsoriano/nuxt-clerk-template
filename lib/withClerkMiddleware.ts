@@ -6,8 +6,6 @@ import { clerkClient } from "./clerkClient";
 
 export function withClerkMiddleware(options: ClerkOptions) {
   return eventHandler(async (event) => {
-    event.context.auth = null
-
     const cookies = parseCookies(event)
     const secretKey = options.secretKey || constants.SECRET_KEY;
     const publishableKey = options.publishableKey || constants.PUBLISHABLE_KEY;
