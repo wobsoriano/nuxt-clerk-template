@@ -1,13 +1,14 @@
 import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend'
 
 export default eventHandler((event) => {
-  const { user } = event.context.auth
+  const { userId } = event.context.auth
 
-  if (!user) {
-    throw createError({ statusCode: 401 })
+  if (!userId) {
+    setResponseStatus(event, 401)
+    return 'You are not authorized to view this page.'
   }
 
-  return user
+  return event.context.auth
 })
 
 declare module 'h3' {
