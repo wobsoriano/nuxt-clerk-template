@@ -14,6 +14,9 @@ dependencies:
   '@clerk/clerk-sdk-node':
     specifier: ^4.10.12
     version: 4.10.12
+  node-fetch-native:
+    specifier: ^1.2.0
+    version: 1.2.0
 
 devDependencies:
   '@clerk/types':
@@ -4860,7 +4863,6 @@ packages:
 
   /node-fetch-native@1.2.0:
     resolution: {integrity: sha512-5IAMBTl9p6PaAjYCnMv5FmqIF6GcZnawAVnzaCG0rX2aYZJ4CxEkZNtVPuTRug7fL7wyM5BQYTlAzcyMPi6oTQ==}
-    dev: true
 
   /node-fetch@2.6.11:
     resolution: {integrity: sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==}

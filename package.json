@@ -18,6 +18,7 @@
   "dependencies": {
     "@clerk/backend": "^0.23.5",
     "@clerk/clerk-js": "^4.50.1",
-    "@clerk/clerk-sdk-node": "^4.10.12"
+    "@clerk/clerk-sdk-node": "^4.10.12",
+    "node-fetch-native": "^1.2.0"
   }
 }
