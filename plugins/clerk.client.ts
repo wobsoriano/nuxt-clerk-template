@@ -1,3 +1,9 @@
+/**
+ * Can't use the @clerk/clerk-js module because of the ff.
+ * https://github.com/clerkinc/javascript/issues/1382
+ * https://github.com/clerkinc/javascript/issues/1381
+ */
+
 export default defineNuxtPlugin(async () => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
 
