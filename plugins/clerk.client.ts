@@ -2,14 +2,11 @@ import ClerkJS from '@clerk/clerk-js'
 
 export default defineNuxtPlugin(async () => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
+  const Clerk = new ClerkJS(publishableKey);
 
   async function startClerk() {
-    const Clerk = new ClerkJS(publishableKey);
-  
     try {
       await Clerk?.load();
-
-      console.log('clerk loaded')
 
       const userButton = document.getElementById('user-button') as HTMLDivElement;
       const authLinks = document.getElementById('auth-links') as HTMLDivElement;
@@ -31,4 +28,10 @@ export default defineNuxtPlugin(async () => {
   }
   
   startClerk()
+
+  return {
+    provide: {
+      clerk: Clerk
+    }
+  }
 })
