@@ -1,5 +1,7 @@
 # Nuxt 3 + Clerk Playground
 
+An example of Nuxt and Clerk integration using [h3-clerk](https://github.com/wobsoriano/h3-clerk).
+
 <img src="/demo.png" />
 
 ## Setup
