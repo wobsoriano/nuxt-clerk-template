@@ -2,19 +2,18 @@
 const { $clerk } = useNuxtApp()
 const showAuthLinks = ref(false)
 const userButton = ref<HTMLDivElement | null>(null)
+const user = useUser()
 
-onMounted(() => {
-  $clerk?.addListener(({ user }) => {
-    if (user) {
-      showAuthLinks.value = false
-      
-      nextTick(() => {
-        $clerk.mountUserButton(userButton.value!)
-      })
-    } else {
-      showAuthLinks.value = true
-    }
-  })
+watch(user, (value) => {
+  if (value) {
+    showAuthLinks.value = false
+
+    nextTick(() => {
+      $clerk.mountUserButton(userButton.value!)
+    })
+  } else {
+    showAuthLinks.value = true
+  }
 })
 </script>
 
