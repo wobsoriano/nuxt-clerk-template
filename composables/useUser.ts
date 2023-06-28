@@ -1,5 +1,5 @@
 import type { UserResource } from '@clerk/types'
 
-export default function useUser() {
+export function useUser() {
   return useState<UserResource | null | undefined>(() => null)
 }
