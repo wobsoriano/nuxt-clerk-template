@@ -1,21 +1,18 @@
 <script setup lang="ts">
 const { $clerk } = useNuxtApp()
 const showAuthLinks = ref(false)
-const showUserButton = ref(false)
 const userButton = ref<HTMLDivElement | null>(null)
 
 onMounted(() => {
   $clerk?.addListener(({ user }) => {
     if (user) {
       showAuthLinks.value = false
-      showUserButton.value = true
       
       nextTick(() => {
         $clerk.mountUserButton(userButton.value!)
       })
     } else {
       showAuthLinks.value = true
-      showUserButton.value = false
     }
   })
 })
@@ -29,5 +26,5 @@ onMounted(() => {
     <button @click="$clerk.openSignIn">Sign In</button>
   </div>
 
-  <div v-if="showUserButton" ref="userButton" style="margin: auto;"></div>
+  <div v-else ref="userButton" style="margin: auto;"></div>
 </template>
