@@ -1,9 +1,9 @@
 import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend'
 
 export default eventHandler((event) => {
-  const { userId } = event.context.auth
+  const { auth } = event.context
 
-  if (!userId) {
+  if (!auth?.userId) {
     setResponseStatus(event, 401)
     return 'You are not authorized to view this page.'
   }
@@ -13,6 +13,6 @@ export default eventHandler((event) => {
 
 declare module 'h3' {
   interface H3EventContext {
-    auth: SignedInAuthObject | SignedOutAuthObject
+    auth: null | SignedInAuthObject | SignedOutAuthObject
   }
 }
