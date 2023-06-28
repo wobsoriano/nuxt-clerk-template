@@ -8,7 +8,7 @@ export default eventHandler((event) => {
     return 'You are not authorized to view this page.'
   }
 
-  return event.context.auth
+  return { user: auth.user }
 })
 
 declare module 'h3' {
