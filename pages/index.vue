@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { $clerk } = useNuxtApp()
-const showAuthLinks = ref(false)
+const showAuthLinks = ref(true)
 const userButton = ref<HTMLDivElement | null>(null)
 const user = useUser()
 
