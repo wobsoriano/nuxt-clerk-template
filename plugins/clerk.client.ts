@@ -7,21 +7,6 @@ export default defineNuxtPlugin(async () => {
   async function startClerk() {
     try {
       await Clerk?.load();
-
-      const userButton = document.getElementById('user-button') as HTMLDivElement;
-      const authLinks = document.getElementById('auth-links') as HTMLDivElement;
-
-      Clerk?.addListener(({ user }) => {
-        // Display links conditionally based on user state
-        authLinks.style.display = user ? 'none' : 'block';
-      })
-
-      if (Clerk.user) {
-        // Mount user button component
-        Clerk.mountUserButton(userButton)
-        userButton.style.margin = 'auto';
-      }
-    
     } catch (err) {
       console.error('Error starting Clerk: ', err);
     }
