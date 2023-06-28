@@ -24,16 +24,10 @@ onMounted(() => {
 <template>
   <h1>Clerk + Nuxt Example</h1>
 
-  <div v-if="showAuthLinks" id="auth-links">
+  <div v-if="showAuthLinks">
     <button @click="$clerk.openSignUp">Sign Up</button>
     <button @click="$clerk.openSignIn">Sign In</button>
   </div>
 
-  <div v-if="showUserButton" ref="userButton" id="user-button"></div>
+  <div v-if="showUserButton" ref="userButton" style="margin: auto;"></div>
 </template>
-
-<style>
-#user-button {
-  margin: auto;
-}
-</style>
