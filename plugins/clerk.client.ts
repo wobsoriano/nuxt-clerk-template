@@ -1,6 +1,6 @@
 import ClerkJS from '@clerk/clerk-js'
 
-export default defineNuxtPlugin(async () => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
   const Clerk = new ClerkJS(publishableKey);
 
@@ -11,8 +11,8 @@ export default defineNuxtPlugin(async () => {
       console.error('Error starting Clerk: ', err);
     }
   }
-  
-  startClerk()
+
+  nuxtApp.hooks.hook('app:mounted', startClerk)
 
   return {
     provide: {
