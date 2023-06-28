@@ -1,17 +1,15 @@
-/**
- * Can't use the @clerk/clerk-js module because of the ff.
- * https://github.com/clerkinc/javascript/issues/1382
- * https://github.com/clerkinc/javascript/issues/1381
- */
+import ClerkJS from '@clerk/clerk-js'
 
 export default defineNuxtPlugin(async () => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
 
   async function startClerk() {
-    const Clerk = window.Clerk;
+    const Clerk = new ClerkJS(publishableKey);
   
     try {
       await Clerk?.load();
+
+      console.log('clerk loaded')
 
       const userButton = document.getElementById('user-button') as HTMLDivElement;
       const authLinks = document.getElementById('auth-links') as HTMLDivElement;
@@ -31,25 +29,6 @@ export default defineNuxtPlugin(async () => {
       console.error('Error starting Clerk: ', err);
     }
   }
-
-  (() => {
-    const script = document.createElement("script");
-    script.setAttribute("data-clerk-publishable-key", publishableKey);
-    script.async = true;
-    script.src = `https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js`;
-    script.crossOrigin = "anonymous";
-    script.addEventListener("load", startClerk);
-    script.addEventListener("error", () => {
-      document.getElementById("no-frontend-api-warning")!.hidden = false;
-    });
-    document.body.appendChild(script);
-  })()
+  
+  startClerk()
 })
-
-declare global {
-  interface Window {
-    Clerk: import('@clerk/types').Clerk & {
-      load: () => void
-    }
-  }
-}

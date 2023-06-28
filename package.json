@@ -15,6 +15,7 @@
     "typescript": "latest"
   },
   "dependencies": {
+    "@clerk/clerk-js": "4.38.4",
     "@clerk/types": "^3.46.1",
     "h3-clerk": "^0.0.5",
     "node-fetch-native": "^1.2.0"
