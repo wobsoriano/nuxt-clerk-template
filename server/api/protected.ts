@@ -1,14 +1,15 @@
 import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend'
+import { clerkClient } from 'h3-clerk'
 
-export default eventHandler((event) => {
+export default eventHandler(async (event) => {
   const { auth } = event.context
 
   if (!auth.userId) {
-    setResponseStatus(event, 401)
-    return 'You are not authorized to view this page.'
+    setResponseStatus(event, 403)
+    return ''
   }
 
-  return { message: `Hi, ${auth.userId}` }
+  return await clerkClient.users.getUser(auth.userId)
 })
 
 declare module 'h3' {
