@@ -1,4 +1,3 @@
-import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend'
 import { clerkClient } from 'h3-clerk'
 
 export default eventHandler(async (event) => {
@@ -11,9 +10,3 @@ export default eventHandler(async (event) => {
 
   return await clerkClient.users.getUser(auth.userId)
 })
-
-declare module 'h3' {
-  interface H3EventContext {
-    auth: SignedInAuthObject | SignedOutAuthObject
-  }
-}
