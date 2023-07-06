@@ -15,7 +15,9 @@ watch(() => user.value.isSignedIn, (value) => {
 <template>
   <h1>Clerk + Nuxt Example</h1>
 
-  <div v-if="!user.isSignedIn">
+  <div v-if="!user.isLoaded">Please wait...</div>
+
+  <div v-else-if="!user.isSignedIn">
     <button @click="$clerk.openSignUp">Sign Up</button>
     <button @click="$clerk.openSignIn">Sign In</button>
   </div>
