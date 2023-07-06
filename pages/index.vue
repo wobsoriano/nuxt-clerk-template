@@ -1,18 +1,13 @@
 <script setup lang="ts">
 const { $clerk } = useNuxtApp()
-const showAuthLinks = ref(true)
 const userButton = ref<HTMLDivElement | null>(null)
 const user = useUser()
 
-watch(user, (value) => {
+watch(() => user.value.isSignedIn, (value) => {
   if (value) {
-    showAuthLinks.value = false
-
     nextTick(() => {
       $clerk.mountUserButton(userButton.value!)
     })
-  } else {
-    showAuthLinks.value = true
   }
 })
 </script>
@@ -20,7 +15,7 @@ watch(user, (value) => {
 <template>
   <h1>Clerk + Nuxt Example</h1>
 
-  <div v-if="showAuthLinks">
+  <div v-if="!user.isSignedIn">
     <button @click="$clerk.openSignUp">Sign Up</button>
     <button @click="$clerk.openSignIn">Sign In</button>
   </div>

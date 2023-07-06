@@ -10,7 +10,17 @@ export default defineNuxtPlugin(async (nuxtApp) => {
       await Clerk?.load();
 
       Clerk?.addListener((payload) => {
-        user.value = payload.user
+        if (payload.user === undefined) {
+          user.value = { isLoaded: false, isSignedIn: undefined, user: undefined }
+          return
+        }
+
+        if (payload.user === null) {
+          user.value = { isLoaded: true, isSignedIn: false, user: null }
+          return
+        }
+
+        user.value = { isLoaded: true, isSignedIn: true, user: payload.user }
       })
     } catch (err) {
       console.error('Error starting Clerk: ', err);
