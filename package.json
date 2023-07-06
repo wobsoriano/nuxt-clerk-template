@@ -17,7 +17,7 @@
   "dependencies": {
     "@clerk/clerk-js": "4.38.4",
     "@clerk/types": "^3.46.1",
-    "h3-clerk": "^0.0.7",
+    "h3-clerk": "^0.1.0",
     "node-fetch-native": "^1.2.0"
   }
 }
