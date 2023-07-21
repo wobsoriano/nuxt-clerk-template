@@ -6,18 +6,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^20.4.2",
-    "nuxt": "^3.6.5",
-    "typescript": "latest"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@clerk/clerk-js": "4.54.0",
     "@clerk/types": "^3.48.0",
     "h3-clerk": "^0.1.1",
     "node-fetch-native": "^1.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@nuxt/devtools": "latest",
+    "@types/node": "^20.4.2",
+    "eslint": "^8.45.0",
+    "nuxt": "^3.6.5",
+    "typescript": "latest"
   }
 }

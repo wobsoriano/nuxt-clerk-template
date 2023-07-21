@@ -1,4 +1,4 @@
-import type { UserResource } from '@clerk/types'
+import type { UserResource } from '@clerk/types';
 
 type UseUserReturn =
   | { isLoaded: false; isSignedIn: undefined; user: undefined }
@@ -9,6 +9,6 @@ export function useUser() {
   return useState<UseUserReturn>('user', () => ({
     isLoaded: false,
     isSignedIn: undefined,
-    user: undefined
-  }))
+    user: undefined,
+  }));
 }

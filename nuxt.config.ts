@@ -5,6 +5,6 @@ export default defineNuxtConfig({
     public: {
       clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY,
     },
-    clerkSecretKey: process.env.CLERK_SECRET_KEY
+    clerkSecretKey: process.env.CLERK_SECRET_KEY,
   },
-})
+});
