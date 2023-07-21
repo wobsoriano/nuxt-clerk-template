@@ -5,7 +5,7 @@ type UseSessionReturn =
   | { isLoaded: ComputedRef<true>; isSignedIn: ComputedRef<false>; session: Ref<null> }
   | { isLoaded: ComputedRef<true>; isSignedIn: ComputedRef<true>; session: Ref<ActiveSessionResource> };
 
-export function useUser() {
+export function useSession() {
   const session = useState<ActiveSessionResource | null | undefined>('clerk-session', () => undefined);
 
   const isLoaded = computed(() => {
