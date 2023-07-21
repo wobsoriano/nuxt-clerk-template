@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const { $clerk } = useNuxtApp();
 const userButton = ref<HTMLDivElement | null>(null);
-const user = useUser();
+const { user, isLoaded, isSignedIn } = useUser();
 
-watch(() => user.value.isSignedIn, (value) => {
+watch(user, (value) => {
   if (value) {
     nextTick(() => {
       $clerk.mountUserButton(userButton.value!);
@@ -15,11 +15,11 @@ watch(() => user.value.isSignedIn, (value) => {
 <template>
   <h1>Clerk + Nuxt Example</h1>
 
-  <div v-if="!user.isLoaded">
+  <div v-if="!isLoaded">
     Please wait...
   </div>
 
-  <div v-else-if="!user.isSignedIn">
+  <div v-else-if="!isSignedIn">
     <button @click="$clerk.openSignUp">
       Sign Up
     </button>
