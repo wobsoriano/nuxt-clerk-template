@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.48.0
     version: 3.48.0
   h3-clerk:
-    specifier: ^0.1.1
-    version: 0.1.1(h3@1.7.1)
+    specifier: ^0.2.0
+    version: 0.2.0(h3@1.7.1)
   node-fetch-native:
     specifier: ^1.2.0
     version: 1.2.0
@@ -449,11 +449,11 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  /@clerk/backend@0.25.1:
-    resolution: {integrity: sha512-941vKzgQ/XnY/YzUx6ZPpe8dEoHlVZ/mUDiXxdwYecwyZ3PHLTh8y+z6m5Imz6HbZ9qoQUOb/2S315dqt7kjFA==}
+  /@clerk/backend@0.26.0:
+    resolution: {integrity: sha512-lFDKVqx2soDvKpynZRtRzb1mg4peE5O5I5H7XIgaGhcchOVPrv+IYR0+rTwlSZkep4xCG12dPIKW+Bjtp6QLKw==}
     engines: {node: '>=14'}
     dependencies:
-      '@clerk/types': 3.48.0
+      '@clerk/types': 3.48.1
       '@peculiar/webcrypto': 1.4.1
       '@types/node': 16.18.6
       cookie: 0.5.0
@@ -513,6 +513,13 @@ packages:
 
   /@clerk/types@3.48.0:
     resolution: {integrity: sha512-whs7s8E5PNBOCy14a80w723dAOStD0cnqY5u7AEq7gGuHuiIYyo1BfqIoIYRh3Oi3Z2cWnFmFNVDN+lHiJ1dFA==}
+    engines: {node: '>=14'}
+    dependencies:
+      csstype: 3.1.1
+    dev: false
+
+  /@clerk/types@3.48.1:
+    resolution: {integrity: sha512-bpSSfqdrw4iYCLlJ8UVN8HWMkA12wOH0lICdjnefPKKm1qO3yb8P5p6jmaCckcwF77unMECAslO2q2ocZcO1QA==}
     engines: {node: '>=14'}
     dependencies:
       csstype: 3.1.1
@@ -1394,9 +1401,9 @@ packages:
       pathe: 1.1.1
       pkg-types: 1.0.3
       scule: 1.0.0
-      semver: 7.5.3
+      semver: 7.5.4
       unctx: 2.3.1
-      unimport: 3.0.14(rollup@3.26.3)
+      unimport: 3.1.0
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -4406,12 +4413,12 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /h3-clerk@0.1.1(h3@1.7.1):
-    resolution: {integrity: sha512-wCA1gMu8Hq7BZGhB1XTiC5/T6NSg+LhiDSWdq/ZB/9F4U3a0ZpP2lWGbRRYzCRS94iREipOgMh9ANipDy8phPg==}
+  /h3-clerk@0.2.0(h3@1.7.1):
+    resolution: {integrity: sha512-U71Hj70jRpEQpUHXOiaZMUOZlMqShAr2+MOuukKQx/NzA4gTJzAzFuoqbnZ/x1XQ/02XQ7uhMQjE86Uh8oMXug==}
     peerDependencies:
       h3: ^1.7.0
     dependencies:
-      '@clerk/backend': 0.25.1
+      '@clerk/backend': 0.26.0
       h3: 1.7.1
     dev: false
 
@@ -7851,7 +7858,7 @@ packages:
       lodash.debounce: 4.0.8
       lodash.pick: 4.4.0
       npm-run-path: 4.0.1
-      semver: 7.5.3
+      semver: 7.5.4
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
       typescript: 5.1.6
