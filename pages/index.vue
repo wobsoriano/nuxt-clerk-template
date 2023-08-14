@@ -1,32 +1,14 @@
 <script setup lang="ts">
-const { $clerk } = useNuxtApp();
-const userButton = ref<HTMLDivElement | null>(null);
-const { user, isLoaded, isSignedIn } = useUser();
+import { SignInButton, UserButton, useAuth } from 'vue-clerk';
 
-watch(user, (value) => {
-  if (value) {
-    nextTick(() => {
-      $clerk.mountUserButton(userButton.value!);
-    });
-  }
-});
+const { isSignedIn } = useAuth();
+const route = useRoute();
 </script>
 
 <template>
-  <h1>Clerk + Nuxt Example</h1>
-
-  <div v-if="!isLoaded">
-    Please wait...
+  <h1>Hello Clerk!</h1>
+  <div v-if="isSignedIn">
+    <UserButton :after-sign-out-url="route.fullPath" />
   </div>
-
-  <div v-else-if="!isSignedIn">
-    <button @click="$clerk.openSignUp">
-      Sign Up
-    </button>
-    <button @click="$clerk.openSignIn">
-      Sign In
-    </button>
-  </div>
-
-  <div v-else ref="userButton" style="margin: auto;" />
+  <SignInButton v-else mode="modal" />
 </template>

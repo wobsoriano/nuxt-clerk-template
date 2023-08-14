@@ -13,14 +13,16 @@
   "dependencies": {
     "@clerk/clerk-js": "4.55.0",
     "@clerk/types": "^3.49.0",
-    "h3-clerk": "^0.2.1",
-    "node-fetch-native": "^1.2.0"
+    "h3": "^1.7.1",
+    "h3-clerk": "^0.2.3",
+    "node-fetch-native": "^1.2.0",
+    "vue-clerk": "^0.0.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
     "@nuxt/devtools": "latest",
-    "@types/node": "^20.4.9",
-    "eslint": "^8.46.0",
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
     "nuxt": "^3.6.5",
     "typescript": "latest"
   }
