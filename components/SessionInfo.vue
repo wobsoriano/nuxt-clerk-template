@@ -8,13 +8,13 @@ const { session } = useSession();
   <Card title="Session">
     <div v-if="session">
       <dl>
-        <div>
+        <div class="py-2">
           <dt class="font-semibold">
             Session ID
           </dt>
           <dd>{{ session.id }}</dd>
         </div>
-        <div class="mt-2">
+        <div class="py-2">
           <dt class="font-semibold">
             Status
           </dt>
@@ -24,13 +24,13 @@ const { session } = useSession();
             </div>
           </dd>
         </div>
-        <div class="mt-2">
+        <div class="py-2">
           <dt class="font-semibold">
             Last Active
           </dt>
           <dd>{{ session.lastActiveAt.toLocaleString() }}</dd>
         </div>
-        <div class="mt-2">
+        <div class="py-2">
           <dt class="font-semibold">
             Expiry
           </dt>

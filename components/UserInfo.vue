@@ -8,38 +8,38 @@ const { user } = useUser();
   <Card title="User">
     <div v-if="user">
       <dl>
-        <div>
+        <div class="py-2">
           <dt class="font-semibold">
             User ID
           </dt>
           <dd>{{ user.id }}</dd>
         </div>
-        <div v-if="user.firstName" class="mt-2">
+        <div v-if="user.firstName" class="py-2">
           <dt class="font-semibold">
             First name
           </dt>
           <dd>{{ user.firstName }}</dd>
         </div>
-        <div v-if="user.lastName" class="mt-2">
+        <div v-if="user.lastName" class="py-2">
           <dt class="font-semibold">
             Last name
           </dt>
           <dd>{{ user.lastName }}</dd>
         </div>
-        <div class="mt-2">
+        <div class="py-2">
           <dt class="font-semibold">
             Email
           </dt>
           <dd>
             <div v-for="email in user.emailAddresses" :key="email.id" class="flex gap-2 mb-1">
               {{ email.emailAddress }}
-              <span v-if="user.primaryEmailAddressId === email.id" class="text-xs bg-primary-50 text-primary-700 rounded-2xl px-2 font-medium pt-[2px]">
+              <span v-if="user.primaryEmailAddressId === email.id" class="text-xs bg-primary text-primary-700 text-white rounded-2xl px-2 font-medium pt-[3px]">
                 Primary
               </span>
             </div>
           </dd>
         </div>
-        <div class="mt-2">
+        <div class="py-2">
           <dt class="font-semibold">
             Profile Image
           </dt>
