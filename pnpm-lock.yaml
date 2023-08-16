@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.2.0
     version: 1.2.0
   vue-clerk:
-    specifier: ^0.0.8
-    version: 0.0.8(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4)
+    specifier: ^0.0.10
+    version: 0.0.10(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -9104,8 +9104,8 @@ packages:
       ufo: 1.1.2
     dev: true
 
-  /vue-clerk@0.0.8(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4):
-    resolution: {integrity: sha512-yb55f9gFd4Wxxy8U9GHwNpq4FzjvSSJbn1IgpRsFNQwTAmcV7WlzI0poSs5oAcpIpabKrmB71k96q3HFGel8cQ==}
+  /vue-clerk@0.0.10(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4):
+    resolution: {integrity: sha512-MhSFqt+7ISjWk4bDJwQu43Tl+SaIrnGzlfhep95A3RjociMoBrHlMEMygDiNS/B3lqRMH4uQcsMrSThmD+N/Qw==}
     peerDependencies:
       vue: '>=3.3.0'
     dependencies:

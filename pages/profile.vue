@@ -8,8 +8,9 @@ const { user } = useUser();
   <h1 class="text-3xl font-semibold">
     👋 Hi, {{ user?.firstName }}!
   </h1>
-  <div class="grid lg:grid-cols-2 gap-4">
+  <div class="grid lg:grid-cols-3 gap-4">
     <UserInfo />
     <SessionInfo />
+    <OrganizationInfo />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UserButton } from 'vue-clerk';
+import { OrganizationSwitcher, UserButton } from 'vue-clerk';
 </script>
 
 <template>
@@ -10,7 +10,8 @@ import { UserButton } from 'vue-clerk';
           Nuxt Clerk
         </NuxtLink>
       </div>
-      <div class="flex-none">
+      <div class="flex-none gap-4">
+        <OrganizationSwitcher />
         <UserButton after-sign-out-url="http://localhost:3000/sign-in" />
       </div>
     </div>
