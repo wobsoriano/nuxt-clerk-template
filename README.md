@@ -4,7 +4,7 @@
 
 This template shows how to use [Clerk](https://www.clerk.com) in a Nuxt application.
 
-VClerk is a developer-first authentication and user management solution. This starter uses [Vue Clerk](https://vue-clerk.vercel.app), which provides pre-built Vue components and composables for login, signup, user profile, and organization management. [Vue Clerk](https://vue-clerk.vercel.app) is designed to be easy to use and customize, and can be dropped into any Vue or Nuxt application.
+Clerk is a developer-first authentication and user management solution. This starter uses [Vue Clerk](https://vue-clerk.vercel.app), which provides pre-built Vue components and composables for login, signup, user profile, and organization management. [Vue Clerk](https://vue-clerk.vercel.app) is designed to be easy to use and customize, and can be dropped into any Vue or Nuxt application.
 
 This template allows you to get started with Clerk and Nuxt in a matter of minutes and includes:
 
