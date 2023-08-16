@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { useAuth } from 'vue-clerk';
+
+const { isSignedIn } = useAuth();
+
+const getStartedLink = computed(() => {
+  if (isSignedIn.value)
+    return '/profile';
+
+  return '/sign-in';
+});
 </script>
 
 <template>
@@ -11,7 +21,7 @@
         <p class="py-6">
           A simple and powerful Nuxt template featuring authentication and user management powered by Clerk.
         </p>
-        <NuxtLink to="/sign-in" class="btn btn-primary">
+        <NuxtLink :to="getStartedLink" class="btn btn-primary">
           Get Started
         </NuxtLink>
       </div>
