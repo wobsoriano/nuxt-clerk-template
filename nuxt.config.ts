@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  modules: ['@nuxtjs/tailwindcss'],
   build: {
-    transpile: ['@clerk/clerk-js', 'vue-clerk'],
+    transpile: ['vue-clerk'],
   },
   runtimeConfig: {
     public: {

@@ -11,17 +11,17 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/clerk-js": "4.55.0",
-    "@clerk/types": "^3.49.0",
-    "h3": "^1.7.1",
-    "h3-clerk": "^0.2.3",
+    "h3": "^1.8.0",
+    "h3-clerk": "^0.3.0",
     "node-fetch-native": "^1.2.0",
-    "vue-clerk": "^0.0.7"
+    "vue-clerk": "^0.0.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^20.5.0",
+    "daisyui": "^3.5.1",
     "eslint": "^8.47.0",
     "nuxt": "^3.6.5",
     "typescript": "latest"

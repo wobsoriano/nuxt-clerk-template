@@ -1,14 +1,20 @@
 <script setup lang="ts">
-import { SignInButton, UserButton, useAuth } from 'vue-clerk';
-
-const { isSignedIn } = useAuth();
-const route = useRoute();
 </script>
 
 <template>
-  <h1>Hello Clerk!</h1>
-  <div v-if="isSignedIn">
-    <UserButton :after-sign-out-url="route.fullPath" />
+  <div class="hero h-full">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">
+          Auth starts here.
+        </h1>
+        <p class="py-6">
+          A simple and powerful Nuxt template featuring authentication and user management powered by Clerk.
+        </p>
+        <NuxtLink to="/sign-in" class="btn btn-primary">
+          Get Started
+        </NuxtLink>
+      </div>
+    </div>
   </div>
-  <SignInButton v-else mode="modal" />
 </template>
