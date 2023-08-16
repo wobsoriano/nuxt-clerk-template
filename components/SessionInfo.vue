@@ -6,7 +6,7 @@ const { session } = useSession();
 
 <template>
   <Card title="Session">
-    <div v-if="session" class="gap-4">
+    <div v-if="session">
       <dl>
         <div>
           <dt class="font-semibold">

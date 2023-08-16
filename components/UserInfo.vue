@@ -6,7 +6,7 @@ const { user } = useUser();
 
 <template>
   <Card title="User">
-    <div v-if="user" class="gap-4">
+    <div v-if="user">
       <dl>
         <div>
           <dt class="font-semibold">
@@ -36,6 +36,18 @@ const { user } = useUser();
               <span v-if="user.primaryEmailAddressId === email.id" class="text-xs bg-primary-50 text-primary-700 rounded-2xl px-2 font-medium pt-[2px]">
                 Primary
               </span>
+            </div>
+          </dd>
+        </div>
+        <div class="mt-2">
+          <dt class="font-semibold">
+            Profile Image
+          </dt>
+          <dd>
+            <div class="avatar">
+              <div class="w-12 rounded-full">
+                <img :src="user.imageUrl" alt="profile pic">
+              </div>
             </div>
           </dd>
         </div>
