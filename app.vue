@@ -11,7 +11,7 @@ import { OrganizationSwitcher, UserButton } from 'vue-clerk';
         </NuxtLink>
       </div>
       <div class="flex-none gap-4">
-        <OrganizationSwitcher />
+        <OrganizationSwitcher :appearance="{ elements: { organizationPreviewTextContainer: 'hidden md:block', organizationSwitcherTriggerIcon: 'hidden md:block' } }" />
         <UserButton after-sign-out-url="http://localhost:3000/sign-in" />
       </div>
     </div>
