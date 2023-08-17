@@ -1,5 +1,6 @@
 import { clerkClient, withClerkAuth } from 'h3-clerk';
 
+// This causes an infinite loop on first visit in development.
 export default withClerkAuth(async (event) => {
   const { auth } = event.context;
 
