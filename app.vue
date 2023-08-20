@@ -12,7 +12,7 @@ import { OrganizationSwitcher, UserButton } from 'vue-clerk';
       </div>
       <div class="flex-none gap-4">
         <OrganizationSwitcher :appearance="{ elements: { organizationPreviewTextContainer: 'hidden md:block', organizationSwitcherTriggerIcon: 'hidden md:block' } }" />
-        <UserButton after-sign-out-url="http://localhost:3000/sign-in" />
+        <UserButton />
       </div>
     </div>
     <div class="grow">
