@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { OrganizationProfile } from 'vue-clerk';
+
+definePageMeta({
+  middleware: ['auth'],
+});
 </script>
 
 <template>

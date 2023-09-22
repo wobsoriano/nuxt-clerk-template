@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { useUser } from 'vue-clerk';
 
+definePageMeta({
+  middleware: ['auth'],
+});
+
 const { user } = useUser();
 </script>
 
