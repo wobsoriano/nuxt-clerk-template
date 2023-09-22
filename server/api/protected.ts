@@ -1,7 +1,6 @@
-import { clerkClient, withClerkAuth } from 'h3-clerk';
+import { clerkClient } from 'h3-clerk';
 
-// This causes an infinite loop on first visit in development.
-export default withClerkAuth(async (event) => {
+export default eventHandler(async (event) => {
   const { auth } = event.context;
 
   if (!auth.userId) {
@@ -10,7 +9,4 @@ export default withClerkAuth(async (event) => {
   }
 
   return await clerkClient.users.getUser(auth.userId);
-}, {
-  publishableKey: useRuntimeConfig().public.clerkPublishableKey,
-  secretKey: useRuntimeConfig().clerkSecretKey,
 });
