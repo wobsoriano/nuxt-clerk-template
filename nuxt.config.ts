@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss'],
   build: {
-    transpile: ['vue-clerk', '@clerk/clerk-js'],
+    transpile: ['vue-clerk'],
   },
   runtimeConfig: {
     public: {
