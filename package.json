@@ -12,17 +12,17 @@
   },
   "dependencies": {
     "h3": "^1.8.2",
-    "h3-clerk": "^0.3.5",
+    "h3-clerk": "^0.3.6",
     "node-fetch-native": "^1.4.0",
     "vue-clerk": "^0.0.12"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.43.1",
     "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@types/node": "^20.8.7",
+    "@nuxtjs/tailwindcss": "^6.8.1",
+    "@types/node": "^20.8.8",
     "daisyui": "^3.9.3",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "nuxt": "^3.8.0",
     "typescript": "latest"
   }
