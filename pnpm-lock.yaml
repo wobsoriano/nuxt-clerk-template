@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.4.0
     version: 1.4.0
   vue-clerk:
-    specifier: ^0.0.12
-    version: 0.0.12(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4)
+    specifier: ^0.1.1
+    version: 0.1.1(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4)
 
 devDependencies:
   '@antfu/eslint-config':
@@ -519,14 +519,14 @@ packages:
       - react
     dev: false
 
-  /@clerk/clerk-js@4.62.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-r2Z1jcUlwdLUXCfg1Ire7/OUHsd7a2hJOJ+uTBzlVhdWR/a9rSrQ4WBRfZ7YqwAmUbmZmXMhgNtFds1fMa7ziw==}
+  /@clerk/clerk-js@4.65.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-UdFRr11R7xtZi8VnbSqYLVInRpD6TdGjfV2B1sQMKdVRcSo6HUT1v8ZcaZWcYSPJpNl0N6vC8EsZWpFZTpUzrw==}
     peerDependencies:
       react: '>=18'
     dependencies:
-      '@clerk/localizations': 1.26.6(react@18.2.0)
-      '@clerk/shared': 0.24.5(react@18.2.0)
-      '@clerk/types': 3.56.1
+      '@clerk/localizations': 1.26.9(react@18.2.0)
+      '@clerk/shared': 1.1.0(react@18.2.0)
+      '@clerk/types': 3.58.0
       '@emotion/cache': 11.11.0
       '@emotion/react': 11.11.1(react@18.2.0)
       '@floating-ui/react': 0.25.4(react-dom@18.2.0)(react@18.2.0)
@@ -562,28 +562,14 @@ packages:
       - react
     dev: false
 
-  /@clerk/localizations@1.26.6(react@18.2.0):
-    resolution: {integrity: sha512-QTDySRadqbvAQBj+ewu0D+9Pmj3l1vxhio/YzHOPzvItULcjbFZd9Z0kSr8rZ1I+rQnlBl6NEHrrwIQig5sxVw==}
+  /@clerk/localizations@1.26.9(react@18.2.0):
+    resolution: {integrity: sha512-B4QlP0bYDDhGzyzvWDz+8g73o1uSEJkGzwhisybOKxyayleZUNl67WzQdKRhoU9n5RY1TsPSDiq2Rdu9BIVfPA==}
     engines: {node: '>=14'}
     peerDependencies:
       react: '>=16'
     dependencies:
-      '@clerk/types': 3.56.1
+      '@clerk/types': 3.58.0
       react: 18.2.0
-    dev: false
-
-  /@clerk/shared@0.24.5(react@18.2.0):
-    resolution: {integrity: sha512-93ZNcAS0S3iH4s5lE9e+zroF3/Chc0pCsVm8P9kinA3y/IornidaGKhezMFgJLdJkCOxg7/QiWwdYbQpB8HVBw==}
-    peerDependencies:
-      react: '>=16'
-    peerDependenciesMeta:
-      react:
-        optional: true
-    dependencies:
-      glob-to-regexp: 0.4.1
-      js-cookie: 3.0.1
-      react: 18.2.0
-      swr: 2.2.0(react@18.2.0)
     dev: false
 
   /@clerk/shared@1.0.0(react@18.2.0):
@@ -600,15 +586,29 @@ packages:
       swr: 2.2.0(react@18.2.0)
     dev: false
 
-  /@clerk/types@3.56.1:
-    resolution: {integrity: sha512-w/LKUH/PtB0nfQ6xtfh08/HyRLcIhvp1Vl3tx67Rvj7HdgDb5r2a2wbqsVanQZkdhE71WpIG36BRPhNWF4W2Bg==}
+  /@clerk/shared@1.1.0(react@18.2.0):
+    resolution: {integrity: sha512-rxQ6bxAERZsf/dzCU35qt3gRp9+a035Vrre8j8tyT60dbP8PQhXUbeNu+oVqqjpHWeyoWWt6fZGLXbDTXdXx7g==}
+    peerDependencies:
+      react: '>=16'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      glob-to-regexp: 0.4.1
+      js-cookie: 3.0.1
+      react: 18.2.0
+      swr: 2.2.0(react@18.2.0)
+    dev: false
+
+  /@clerk/types@3.57.0:
+    resolution: {integrity: sha512-i+XqgqRbcMn5gMwWGiA3W6lCTSDYdonDAgoJgNyRemQg7Zesnbd4OoJZfqyW6vN3wvD9Bl+gMb7gQ3VquNWUOA==}
     engines: {node: '>=14'}
     dependencies:
       csstype: 3.1.1
     dev: false
 
-  /@clerk/types@3.57.0:
-    resolution: {integrity: sha512-i+XqgqRbcMn5gMwWGiA3W6lCTSDYdonDAgoJgNyRemQg7Zesnbd4OoJZfqyW6vN3wvD9Bl+gMb7gQ3VquNWUOA==}
+  /@clerk/types@3.58.0:
+    resolution: {integrity: sha512-fIsvEM3nYQwViOuYxNVcwEl0WkXW6AdYpSghNBKfOge1kriSSHP++T5rRMJBXy6asl2AEydVlUBKx9drAzqKoA==}
     engines: {node: '>=14'}
     dependencies:
       csstype: 3.1.1
@@ -9457,13 +9457,13 @@ packages:
       ufo: 1.3.1
     dev: true
 
-  /vue-clerk@0.0.12(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4):
-    resolution: {integrity: sha512-rmuIVw9o1xGNgAXcozPEiGahm0h8Blei2en+XKyTcVRJLFvxCNJ9ab4rNru0+3bswJJ/fSEFN/xxIl80PkQI9Q==}
+  /vue-clerk@0.1.1(react-dom@18.2.0)(react@18.2.0)(vue@3.3.4):
+    resolution: {integrity: sha512-ROKQJZYclyVWl56GiQk2+qsiiyk/8s+vVM4WD8uY03g8+lxGC+7gGzb8J/Cn9LtpYOrIRi0h5zq1tTPGuTp3Dg==}
     peerDependencies:
-      vue: '>=3.3.0'
+      vue: ^3.2.0
     dependencies:
-      '@clerk/clerk-js': 4.62.1(react-dom@18.2.0)(react@18.2.0)
-      '@clerk/types': 3.56.1
+      '@clerk/clerk-js': 4.65.0(react-dom@18.2.0)(react@18.2.0)
+      '@clerk/types': 3.58.0
       '@vueuse/core': 10.5.0(vue@3.3.4)
       vue: 3.3.4
     transitivePeerDependencies:
