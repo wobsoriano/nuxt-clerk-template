@@ -8,6 +8,6 @@ definePageMeta({
 
 <template>
   <div class="grid h-full place-items-center">
-    <SignIn />
+    <SignIn sign-up-url="/sign-up" />
   </div>
 </template>
