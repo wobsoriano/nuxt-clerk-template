@@ -11,19 +11,19 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "h3": "^1.9.0",
+    "h3": "^1.10.0",
     "h3-clerk": "^0.3.8",
-    "node-fetch-native": "^1.4.1",
-    "vue-clerk": "^0.1.1"
+    "node-fetch-native": "^1.6.1",
+    "vue-clerk": "^0.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.3.1",
+    "@antfu/eslint-config": "^2.6.3",
     "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.10.1",
-    "@types/node": "^20.10.3",
-    "daisyui": "^4.4.19",
-    "eslint": "^8.55.0",
-    "nuxt": "^3.8.2",
+    "@nuxtjs/tailwindcss": "^6.11.0",
+    "@types/node": "^20.11.5",
+    "daisyui": "^4.6.0",
+    "eslint": "^8.56.0",
+    "nuxt": "^3.9.3",
     "typescript": "latest"
   }
 }
