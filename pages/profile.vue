@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useUser } from 'vue-clerk';
-
-definePageMeta({
-  middleware: ['auth'],
+const { data: user } = await useFetch('/api/protected', {
+  headers: useRequestHeaders()
 });
 
-const { user } = useUser();
+if (import.meta.server && !user.value) {
+  navigateTo('/sign-in')
+}
 </script>
 
 <template>

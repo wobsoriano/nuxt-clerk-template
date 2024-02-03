@@ -5,7 +5,7 @@ export default eventHandler(async (event) => {
 
   if (!auth.userId) {
     setResponseStatus(event, 403);
-    return '';
+    return;
   }
 
   return await clerkClient.users.getUser(auth.userId);
