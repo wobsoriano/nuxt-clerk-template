@@ -3,7 +3,7 @@ const { data: user } = await useFetch('/api/protected', {
   headers: useRequestHeaders()
 });
 
-if (import.meta.server && !user.value) {
+if (!user.value) {
   navigateTo('/sign-in')
 }
 </script>
