@@ -25,10 +25,10 @@ if (!user.value) {
       Read the
       <Link
         class="font-medium text-primary-600 hover:underline"
-        href="https://clerk.com/docs?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+        href="https://vue-clerk.vercel.app"
         target="_blank"
       >
-        Clerk Docs -&gt;
+        Vue Clerk Docs -&gt;
       </Link>
     </template>
   </div>
