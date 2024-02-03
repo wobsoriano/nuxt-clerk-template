@@ -41,12 +41,12 @@
         <h2 class="text-3xl font-semibold">What's under the hood?</h2>
         <p class="mt-2">
           This template repo uses some of the following features provided by
-          Clerk. To learn more, read the{" "}
+          Clerk. To learn more, read the
           <a
-            href="https://clerk.com/docs?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+            href="https://vue-clerk.vercel.app/"
             class="font-medium text-primary-600 hover:underline"
           >
-            Clerk Docs
+            Vue Clerk Docs
           </a>
           .
         </p>
@@ -59,7 +59,7 @@
             </p>
             <div class="grow"></div>
             <a
-              href="https://clerk.com/docs/component-reference/overview?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+              href="https://vue-clerk.vercel.app/authentication/sign-in"
               class="text-primary-600 cta hover:underline"
               target="_blank"
             >
@@ -74,7 +74,7 @@
             </p>
             <div class="grow"></div>
             <a
-              href="https://clerk.com/docs/reference/clerk-react/useuser?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+              href="https://vue-clerk.vercel.app/composables/use-auth"
               class="text-primary-600 cta hover:underline"
               target="_blank"
             >
@@ -89,7 +89,7 @@
             </p>
             <div class="grow"></div>
             <a
-              href="https://clerk.com/docs/organizations/overview?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+              href="https://clerk.com/docs/organizations/overview"
               class="text-primary-600 cta hover:underline"
               target="_blank"
             >

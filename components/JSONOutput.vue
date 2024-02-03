@@ -1,11 +1,13 @@
 <script setup lang="ts">
 defineProps<{
-  json: Record<string, any>
+  json: Record<string, unknown>
 }>()
 
 declare global {
   interface Window {
-    Prism: any;
+    Prism: {
+      highlightAll: () => void;
+    };
   }
 }
 
