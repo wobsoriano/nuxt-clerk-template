@@ -1,7 +1,5 @@
 <script setup lang="ts">
-defineProps<{
-  json: Record<string, unknown>
-}>()
+defineProps(['json'])
 
 declare global {
   interface Window {

@@ -71,13 +71,13 @@ const organization = computed(() => state.organization)
           </dl>
         </div>
       </div>
-      <div class="text-gray-700 px-8 pb-5 text-sm">
+      <div v-else class="text-gray-700 px-8 pb-5 text-sm">
         You are currently logged in to your personal workspace.
         <br />
         Create or switch to an organization to see its details.
       </div>
     </div>
-    <div class="text-gray-700 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+    <div v-else class="text-gray-700 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
       Loading organization data...
     </div>
   </div>
