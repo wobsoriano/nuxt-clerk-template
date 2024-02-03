@@ -15,6 +15,6 @@ export default defineNuxtConfig({
     families: {
       Inter: true,
     },
-    subsets: 'latin'
-  }
-});
+    subsets: 'latin',
+  },
+})

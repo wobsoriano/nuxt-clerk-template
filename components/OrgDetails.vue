@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useClerkProvide } from 'vue-clerk';
+import { useClerkProvide } from 'vue-clerk'
 
-const { isClerkLoaded, state } = useClerkProvide();
+const { isClerkLoaded, state } = useClerkProvide()
 
 const jsonOutput = ref(false)
 
@@ -19,8 +19,8 @@ const organization = computed(() => state.organization)
       </h3>
       <Toggle
         :checked="jsonOutput"
-        @change="jsonOutput = !jsonOutput"
         :disabled="!(isClerkLoaded && organization)"
+        @change="jsonOutput = !jsonOutput"
       />
     </div>
     <div v-if="isClerkLoaded">
@@ -31,20 +31,26 @@ const organization = computed(() => state.organization)
         <div v-else class="pb-6 max-h-96">
           <dl>
             <div class="px-8 py-2">
-              <dt class="text-sm font-semibold">Organization ID</dt>
+              <dt class="text-sm font-semibold">
+                Organization ID
+              </dt>
               <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2 flex gap-2">
                 {{ organization.id }}
                 <CopyButton :text="organization.id" />
               </dd>
             </div>
             <div class="px-8 py-2">
-              <dt class="text-sm font-semibold mb-1">Name</dt>
+              <dt class="text-sm font-semibold mb-1">
+                Name
+              </dt>
               <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
                 {{ organization.name }}
               </dd>
             </div>
             <div class="px-8 py-2">
-              <dt class="text-sm font-semibold mb-1">Members</dt>
+              <dt class="text-sm font-semibold mb-1">
+                Members
+              </dt>
               <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
                 {{ organization.membersCount }}
               </dd>
@@ -58,14 +64,16 @@ const organization = computed(() => state.organization)
               </dd>
             </div>
             <div class="px-8 py-2">
-              <dt class="text-sm font-semibold mb-1">Image</dt>
+              <dt class="text-sm font-semibold mb-1">
+                Image
+              </dt>
               <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
                 <img
                   class="rounded"
                   :src="organization.imageUrl"
                   :alt="`Logo for ${organization.name}`"
                   style="width: 48px; height: 48px;"
-                />
+                >
               </dd>
             </div>
           </dl>
@@ -73,7 +81,7 @@ const organization = computed(() => state.organization)
       </div>
       <div v-else class="text-gray-700 px-8 pb-5 text-sm">
         You are currently logged in to your personal workspace.
-        <br />
+        <br>
         Create or switch to an organization to see its details.
       </div>
     </div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useUser } from 'vue-clerk';
+import { useUser } from 'vue-clerk'
 
-const { isLoaded, user } = useUser();
+const { isLoaded, user } = useUser()
 
 const jsonOutput = ref(false)
 </script>
@@ -17,37 +17,45 @@ const jsonOutput = ref(false)
       </h3>
       <Toggle
         :checked="jsonOutput"
-        @change="jsonOutput = !jsonOutput"
         :disabled="!isLoaded"
+        @change="jsonOutput = !jsonOutput"
       />
     </div>
     <div v-if="isLoaded && user">
       <div v-if="jsonOutput" class="overflow-scroll max-h-96 pb-6">
-          <JSONOutput :json="user" />
+        <JSONOutput :json="user" />
       </div>
       <div v-else class="pb-6 max-h-96">
         <dl>
           <div class="px-8 py-2">
-            <dt class="text-sm font-semibold">User ID</dt>
+            <dt class="text-sm font-semibold">
+              User ID
+            </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2 flex gap-2">
               {{ user.id }}
               <CopyButton :text="user.id" />
             </dd>
           </div>
           <div v-if="user.firstName" class="px-8 py-2">
-            <dt class="text-sm font-semibold mb-1">First Name</dt>
+            <dt class="text-sm font-semibold mb-1">
+              First Name
+            </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
               {{ user.firstName }}
             </dd>
           </div>
           <div v-if="user.lastName" class="px-8 py-2">
-            <dt class="text-sm font-semibold mb-1">Last Name</dt>
+            <dt class="text-sm font-semibold mb-1">
+              Last Name
+            </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
               {{ user.lastName }}
             </dd>
           </div>
           <div class="px-8 py-2">
-            <dt class="text-sm font-semibold mb-1">Email addresses</dt>
+            <dt class="text-sm font-semibold mb-1">
+              Email addresses
+            </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
               <div v-for="email in user.emailAddresses" :key="email.id" class="flex gap-2 mb-1">
                 {{ email.emailAddress }}
@@ -58,16 +66,18 @@ const jsonOutput = ref(false)
             </dd>
           </div>
           <div v-if="user.imageUrl" class="px-8 py-2">
-            <dt class="text-sm font-semibold mb-1">Profile Image</dt>
+            <dt class="text-sm font-semibold mb-1">
+              Profile Image
+            </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
-              <img :src="user.imageUrl" class="rounded-full w-12 h-12" />
+              <img :src="user.imageUrl" class="rounded-full w-12 h-12">
             </dd>
           </div>
         </dl>
-        </div>
+      </div>
     </div>
     <div v-else class="text-gray-700 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        Loading user data...
+      Loading user data...
     </div>
   </div>
 </template>

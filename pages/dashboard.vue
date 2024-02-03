@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const { data: user } = await useFetch('/api/protected', {
-  headers: useRequestHeaders()
-});
+  headers: useRequestHeaders(),
+})
 
-if (!user.value) {
+if (!user.value)
   navigateTo('/sign-in')
-}
 </script>
 
 <template>

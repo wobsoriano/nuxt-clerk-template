@@ -4,16 +4,14 @@ defineProps(['json'])
 declare global {
   interface Window {
     Prism: {
-      highlightAll: () => void;
-    };
+      highlightAll: () => void
+    }
   }
 }
 
 onMounted(() => {
-  if (window.Prism) {
-    console.log(`highlighting`);
-    window.Prism.highlightAll();
-  }
+  if (window.Prism)
+    window.Prism.highlightAll()
 })
 </script>
 
