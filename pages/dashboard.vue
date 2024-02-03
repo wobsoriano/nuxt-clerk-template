@@ -23,13 +23,13 @@ if (!user.value) {
         What's next?
       </h2>
       Read the
-      <Link
+      <NuxtLink
         class="font-medium text-primary-600 hover:underline"
         href="https://vue-clerk.vercel.app"
         target="_blank"
       >
         Vue Clerk Docs -&gt;
-      </Link>
+      </NuxtLink>
     </template>
   </div>
 </template>
