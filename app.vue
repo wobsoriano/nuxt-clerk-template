@@ -7,6 +7,16 @@ useHead({
     style: 'font-family: Inter;'
   },
   title: 'Nuxt.js Clerk Template',
+  script: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js',
+      defer: true
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js',
+      defer: true
+    }
+  ]
 })
 </script>
 
