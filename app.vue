@@ -23,22 +23,21 @@ useHead({
 <template>
    <header class="flex items-center h-20 gap-4 px-4 border-b border-black border-solid sm:px-8 border-opacity-20">
       <NuxtLink href="/" class="flex items-center h-20 gap-2 sm:gap-4">
-        <!-- <Image
+        <NuxtImg
           src="/clerk.svg"
           alt="Clerk Logo"
-          width={102}
-          height={32}
+          width="102"
+          height="32"
           priority
         />
-        <Times />
+        <Icon name="Times" />
         <img
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={90}
-          height={18}
+          src="/nuxt.svg"
+          alt="Nuxt.js Logo"
+          width="102"
+          height="21"
           priority
-        /> -->
-        Logo
+        />
       </NuxtLink>
       <div class="grow" />
       <SignedIn>

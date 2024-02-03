@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="flex flex-col justify-center">
-          <img src="~/assets/components.svg" alt="Clerk embeddable components" />
+          <NuxtImg src="/components.svg" alt="Clerk embeddable components" />
         </div>
       </article>
       <article
