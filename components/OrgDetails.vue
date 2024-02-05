@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { useClerkProvide } from 'vue-clerk'
-
-const { isClerkLoaded, state } = useClerkProvide()
+import { useOrganization } from 'vue-clerk'
 
 const jsonOutput = ref(false)
 
-const organization = computed(() => state.organization)
+const { isLoaded, organization } = useOrganization()
 </script>
 
 <template>
@@ -19,11 +17,11 @@ const organization = computed(() => state.organization)
       </h3>
       <Toggle
         :checked="jsonOutput"
-        :disabled="!(isClerkLoaded && organization)"
+        :disabled="!(isLoaded && organization)"
         @change="jsonOutput = !jsonOutput"
       />
     </div>
-    <div v-if="isClerkLoaded">
+    <div v-if="isLoaded">
       <div v-if="organization">
         <div v-if="jsonOutput" class="overflow-scroll max-h-96 pb-6">
           <JSONOutput :json="organization" />
