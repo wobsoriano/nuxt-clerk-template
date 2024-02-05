@@ -66,12 +66,13 @@ const { isLoaded, organization } = useOrganization()
                 Image
               </dt>
               <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
-                <img
+                <NuxtImg
                   class="rounded"
                   :src="organization.imageUrl"
                   :alt="`Logo for ${organization.name}`"
-                  style="width: 48px; height: 48px;"
-                >
+                  width="48"
+                  height="48"
+                />
               </dd>
             </div>
           </dl>

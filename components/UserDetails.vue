@@ -70,7 +70,7 @@ const jsonOutput = ref(false)
               Profile Image
             </dt>
             <dd class="mt-1 text-sm text-gray-600 sm:mt-0 sm:col-span-2">
-              <img :src="user.imageUrl" class="rounded-full w-12 h-12">
+              <NuxtImg :src="user.imageUrl" class="rounded-full w-12 h-12" />
             </dd>
           </div>
         </dl>

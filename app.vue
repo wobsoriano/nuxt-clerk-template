@@ -31,13 +31,13 @@ useHead({
         priority
       />
       <Icon name="Times" />
-      <img
+      <NuxtImg
         src="/nuxt.svg"
         alt="Nuxt.js Logo"
         width="102"
         height="21"
         priority
-      >
+      />
     </NuxtLink>
     <div class="grow" />
     <SignedIn>
