@@ -9,7 +9,7 @@ definePageMeta({
 <template>
   <div class="flex justify-center py-24">
     <ClientOnly>
-      <SignIn redirect-url="/dashboard" />
+      <SignIn fallback-redirect-url="/dashboard" />
     </ClientOnly>
   </div>
 </template>
