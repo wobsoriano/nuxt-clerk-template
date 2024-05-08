@@ -8,6 +8,8 @@ definePageMeta({
 
 <template>
   <div class="grid h-full place-items-center">
-    <OrganizationProfile />
+    <ClientOnly>
+      <OrganizationProfile />
+    </ClientOnly>
   </div>
 </template>
