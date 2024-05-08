@@ -58,11 +58,11 @@ useHead({
           />
         </div>
         <UserButton after-sign-out-url="/" />
-
-        <template #fallback>
-          <p>Loading Clerk components...</p>
-        </template>
       </SignedIn>
+
+      <template #fallback>
+        <p>Loading Clerk components...</p>
+      </template>
     </ClientOnly>
   </header>
   <main class="grow">
