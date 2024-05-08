@@ -3,8 +3,13 @@ import { clerkPlugin } from 'vue-clerk/plugin'
 export default defineNuxtPlugin(async (nuxtApp) => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
 
+  const navigate = (to: string) => {
+    navigateTo(to)
+  }
+
   nuxtApp.vueApp.use(clerkPlugin, {
     publishableKey,
+    navigate,
     appearance: {
       // variables: { colorPrimary: "#000000" },
       // elements: {
