@@ -40,24 +40,30 @@ useHead({
       />
     </NuxtLink>
     <div class="grow" />
-    <SignedIn>
-      <div class="hidden sm:block">
-        <OrganizationSwitcher after-create-organization-url="/dashboard" />
-      </div>
-      <div class="block sm:hidden">
-        <OrganizationSwitcher
-          after-create-organization-url="/dashboard"
-          :appearance="{
-            elements: {
-              organizationSwitcherTriggerIcon: `hidden`,
-              organizationPreviewTextContainer: `hidden`,
-              organizationSwitcherTrigger: `pr-0`,
-            },
-          }"
-        />
-      </div>
-      <UserButton after-sign-out-url="/" />
-    </SignedIn>
+    <ClientOnly>
+      <SignedIn>
+        <div class="hidden sm:block">
+          <OrganizationSwitcher after-create-organization-url="/dashboard" />
+        </div>
+        <div class="block sm:hidden">
+          <OrganizationSwitcher
+            after-create-organization-url="/dashboard"
+            :appearance="{
+              elements: {
+                organizationSwitcherTriggerIcon: `hidden`,
+                organizationPreviewTextContainer: `hidden`,
+                organizationSwitcherTrigger: `pr-0`,
+              },
+            }"
+          />
+        </div>
+        <UserButton after-sign-out-url="/" />
+      </SignedIn>
+
+      <template #fallback>
+        <p>Loading Clerk components...</p>
+      </template>
+    </ClientOnly>
   </header>
   <main class="grow">
     <NuxtPage />

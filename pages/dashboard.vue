@@ -14,9 +14,15 @@ if (!user.value)
         👋 Hi, {{ user.firstName || `Stranger` }}
       </h1>
       <div class="grid gap-4 mt-8 lg:grid-cols-3">
-        <UserDetails />
-        <SessionDetails />
-        <OrgDetails />
+        <ClientOnly>
+          <UserDetails />
+          <SessionDetails />
+          <OrgDetails />
+
+          <template #fallback>
+            <p>Loading Clerk components...</p>
+          </template>
+        </ClientOnly>
       </div>
       <h2 class="mt-16 mb-4 text-3xl font-semibold text-black">
         What's next?

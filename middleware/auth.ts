@@ -1,19 +1,8 @@
-import { useClerk } from 'vue-clerk'
-
 export default defineNuxtRouteMiddleware(() => {
   const nuxtApp = useNuxtApp()
-  const clerk = useClerk()
 
-  // On server, check if the user isn't authenticated
-  // and redirect to /sign-in.
-  if (
-    process.server
-    && !nuxtApp.ssrContext?.event.context.auth?.userId
-  )
-    return navigateTo('/sign-in')
-
-  // On client, check if clerk is loaded and if user isn't authenticated
-  // and redirect to /sign-in.
-  if (process.client && clerk.loaded && !clerk.user?.id)
+  // `event.context.auth` here gets filled by the `server/middleware/clerk.ts`
+  const userId = nuxtApp.ssrContext?.event.context.auth?.userId
+  if (import.meta.server && userId)
     return navigateTo('/sign-in')
 })
