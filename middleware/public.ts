@@ -5,4 +5,8 @@ export default defineNuxtRouteMiddleware(() => {
   const userId = nuxtApp.ssrContext?.event.context.auth?.userId
   if (import.meta.server && userId)
     return navigateTo('/dashboard')
+
+  // nuxtApp.$clerk is only available on the client-side
+  if (import.meta.client && nuxtApp.$clerk.user)
+    return navigateTo('/dashboard')
 })
