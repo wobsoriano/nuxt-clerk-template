@@ -12,10 +12,10 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   // This will make sure that the clerk library is loaded in the client first before moving on to the next middleware.
   await clerk.load({
     routerPush: (to) => {
-      navigateTo(to)
+      return navigateTo(to)
     },
     routerReplace: (to) => {
-      navigateTo(to, { replace: true })
+      return navigateTo(to, { replace: true })
     },
     // appearance: {}
   })
