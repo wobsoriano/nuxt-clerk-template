@@ -21,8 +21,8 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       vue-clerk:
-        specifier: ^0.3.3
-        version: 0.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
+        specifier: ^0.3.4
+        version: 0.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.16.3
@@ -4965,8 +4965,8 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-clerk@0.3.3:
-    resolution: {integrity: sha512-uqWDDS/r4dUmKDmiPEqpunUpDHEoRepD2VCmp2t+8p/mkWrMY46VlagsNSKP7iH1ZV4CvSO7GiuMiIYSAm16yA==}
+  vue-clerk@0.3.4:
+    resolution: {integrity: sha512-kqrTBEggnp/g7fl1MeSK5a8sxJsq69GTCsiEAfE0jlQwWRyDlSZ4Ag0YzF3yw+TaOtsWr5uDdtwY9+XYUeKbSg==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -11022,7 +11022,7 @@ snapshots:
     dependencies:
       ufo: 1.5.3
 
-  vue-clerk@0.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5)):
+  vue-clerk@0.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5)):
     dependencies:
       '@clerk/clerk-js': 5.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/types': 4.2.1

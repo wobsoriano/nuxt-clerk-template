@@ -1,4 +1,4 @@
-import { Clerk, createClerkInstanceWithoutLoading } from 'vue-clerk/plugin'
+import { Clerk, provideClerkToApp } from 'vue-clerk/plugin'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
   const isClerkLoaded = ref(false)
@@ -7,7 +7,10 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   const clerk = new Clerk(publishableKey)
 
   // Instead of using the `vue-clerk` plugin, we can use this internal function to create a Clerk instance.
-  createClerkInstanceWithoutLoading(nuxtApp.vueApp, clerk, isClerkLoaded)
+  provideClerkToApp(nuxtApp.vueApp, clerk, {}, {
+    isClerkLoaded,
+    shouldLoadClerk: false,
+  })
 
   // This will make sure that the clerk library is loaded in the client first before moving on to the next middleware.
   await clerk.load({
