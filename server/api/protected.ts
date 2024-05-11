@@ -1,12 +1,12 @@
-import { clerkClient } from 'h3-clerk'
+import { clerkClient, getAuth } from 'h3-clerk'
 
 export default eventHandler(async (event) => {
-  const { auth } = event.context
+  const { userId } = getAuth(event)
 
-  if (!auth.userId) {
+  if (!userId) {
     setResponseStatus(event, 403)
     return
   }
 
-  return await clerkClient.users.getUser(auth.userId)
+  return await clerkClient.users.getUser(userId)
 })

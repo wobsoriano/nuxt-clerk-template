@@ -15,8 +15,8 @@ importers:
         specifier: ^1.11.1
         version: 1.11.1
       h3-clerk:
-        specifier: ^0.4.2
-        version: 0.4.2(h3@1.11.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.4.3
+        version: 0.4.3(h3@1.11.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       node-fetch-native:
         specifier: ^1.6.4
         version: 1.6.4
@@ -2767,8 +2767,8 @@ packages:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  h3-clerk@0.4.2:
-    resolution: {integrity: sha512-LNc6d0YpFCWx0W+pBgGrYFSW9rf733xayDUooQnQpwAEV71ifuXKMUn1qnI4QhfYzl8TYR/cRsXZmn1VUuCAYw==}
+  h3-clerk@0.4.3:
+    resolution: {integrity: sha512-3gcNCqbKli/0E2hyNrzxnqePc8ZvqBvRqOrY7tb3kjpQDUCsZrPFsAm1/SFF974PKc+SSHNy4lFZbi6ZmEZskA==}
     peerDependencies:
       h3: ^1.8.0
 
@@ -8480,7 +8480,7 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  h3-clerk@0.4.2(h3@1.11.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  h3-clerk@0.4.3(h3@1.11.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@clerk/backend': 1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/clerk-sdk-node': 5.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
