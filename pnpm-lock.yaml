@@ -21,11 +21,11 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       vue-clerk:
-        specifier: ^0.3.5
-        version: 0.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
+        specifier: ^0.3.6
+        version: 0.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^2.16.3
+        specifier: ^2.17.0
         version: 2.17.0(@vue/compiler-sfc@3.4.27)(eslint@9.2.0)(typescript@5.4.5)
       '@nuxtjs/google-fonts':
         specifier: ^3.2.0
@@ -34,7 +34,7 @@ importers:
         specifier: ^6.12.0
         version: 6.12.0(rollup@4.17.2)
       '@types/node':
-        specifier: ^20.12.10
+        specifier: ^20.12.11
         version: 20.12.11
       eslint:
         specifier: ^9.2.0
@@ -304,8 +304,8 @@ packages:
     resolution: {integrity: sha512-WWq7sRQ6UVQgpOrX4AgT4MsxLWFY+UqQ308yl3SYuLKHJhltXJ2p/NBu31V7tzb45QCejMbqlk91dXgA8QvI5A==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/clerk-js@5.2.3':
-    resolution: {integrity: sha512-/DH6gIGgwNHGTTZNhTOG6uEqcOVUWnp0pCHu9FCWYqtuEn0a5y9x4w0D6akZoPfHnLTOISM92woZ96eP2TBb+w==}
+  '@clerk/clerk-js@5.2.4':
+    resolution: {integrity: sha512-0Uyth9GnGNxYKQNxB1yD4PWm2VXcv2QTuOMga4oNAYpUg7aJtTfPna0oHjlFKiJECnunlR75A4h89EFdMz+6Qg==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: '>=18'
@@ -4965,8 +4965,8 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-clerk@0.3.5:
-    resolution: {integrity: sha512-R0J6EHkRSILSQBT/qYb/+w3MUwJznldqolBZnuK8j3zUA2NFm0Wy/nZ2Avr4BigJW6e2FNlMyvEBBehKrXxIfA==}
+  vue-clerk@0.3.6:
+    resolution: {integrity: sha512-RNbDy9eHZvHC4VpJGC1rbPt4Qm/8/FNdsJ1UWD+UfOuuXWm/fOSlQoUhWi+4+Erez4UeJS1KQ3VLRxYXq7loLA==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -5450,7 +5450,7 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/clerk-js@5.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/clerk-js@5.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@clerk/localizations': 2.3.1
       '@clerk/shared': 2.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -11022,9 +11022,9 @@ snapshots:
     dependencies:
       ufo: 1.5.3
 
-  vue-clerk@0.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5)):
+  vue-clerk@0.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5)):
     dependencies:
-      '@clerk/clerk-js': 5.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/clerk-js': 5.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/types': 4.2.1
       '@vueuse/core': 10.9.0(vue@3.4.27(typescript@5.4.5))
       vue: 3.4.27(typescript@5.4.5)
