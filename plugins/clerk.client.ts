@@ -1,4 +1,5 @@
 import { Clerk, provideClerkToApp } from 'vue-clerk/plugin'
+// import { frFR } from '@clerk/localizations'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
   const isClerkLoaded = ref(false)
@@ -21,6 +22,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     routerReplace: (to) => {
       return navigateTo(to, { replace: true })
     },
+    // localization: frFR,
     // appearance: {}
   })
 
