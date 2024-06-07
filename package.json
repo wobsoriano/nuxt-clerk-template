@@ -14,7 +14,7 @@
     "@clerk/localizations": "^2.4.4",
     "@nuxt/image": "^1.7.0",
     "h3": "^1.11.1",
-    "h3-clerk": "^0.4.3",
+    "h3-clerk": "^0.4.4",
     "node-fetch-native": "^1.6.4",
     "vue-clerk": "^0.4.0"
   },
