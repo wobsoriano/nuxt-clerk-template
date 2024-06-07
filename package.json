@@ -16,7 +16,7 @@
     "h3": "^1.11.1",
     "h3-clerk": "^0.4.3",
     "node-fetch-native": "^1.6.4",
-    "vue-clerk": "^0.3.8"
+    "vue-clerk": "^0.4.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.20.0",
