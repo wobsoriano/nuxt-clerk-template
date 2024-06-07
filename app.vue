@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OrganizationSwitcher, SignedIn, UserButton } from 'vue-clerk-test'
+import { OrganizationSwitcher, SignedIn, UserButton } from 'vue-clerk'
 
 useHead({
   bodyAttrs: {

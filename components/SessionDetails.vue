@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useSession } from 'vue-clerk-test'
+import { useSession } from 'vue-clerk'
 
 const { isLoaded, session } = useSession()
 

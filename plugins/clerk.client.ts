@@ -1,4 +1,4 @@
-import { provideClerkToVueApp } from 'vue-clerk-test'
+import { provideClerkToVueApp } from 'vue-clerk'
 // import { frFR } from '@clerk/localizations'
 
 export default defineNuxtPlugin(async (nuxtApp) => {

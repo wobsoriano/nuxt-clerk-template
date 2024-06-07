@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
   build: {
-    transpile: ['vue-clerk-test'],
+    transpile: ['vue-clerk'],
   },
   runtimeConfig: {
     public: {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SignIn } from 'vue-clerk-test'
+import { SignIn } from 'vue-clerk'
 
 definePageMeta({
   middleware: ['public'],
