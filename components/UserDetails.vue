@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUser } from 'vue-clerk'
+import { useUser } from 'vue-clerk-test'
 
 const { isLoaded, user } = useUser()
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useOrganization } from 'vue-clerk'
+import { useOrganization } from 'vue-clerk-test'
 
 const jsonOutput = ref(false)
 
