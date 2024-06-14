@@ -3,8 +3,9 @@ const { data: user } = await useFetch('/api/protected', {
   headers: useRequestHeaders(),
 })
 
-if (!user.value)
-  navigateTo('/sign-in')
+definePageMeta({
+  middleware: ['auth'],
+})
 </script>
 
 <template>
@@ -14,15 +15,9 @@ if (!user.value)
         👋 Hi, {{ user.firstName || `Stranger` }}
       </h1>
       <div class="grid gap-4 mt-8 lg:grid-cols-3">
-        <ClientOnly>
-          <UserDetails />
-          <SessionDetails />
-          <OrgDetails />
-
-          <template #fallback>
-            <p>Loading Clerk components...</p>
-          </template>
-        </ClientOnly>
+        <UserDetails />
+        <SessionDetails />
+        <OrgDetails />
       </div>
       <h2 class="mt-16 mb-4 text-3xl font-semibold text-black">
         What's next?
