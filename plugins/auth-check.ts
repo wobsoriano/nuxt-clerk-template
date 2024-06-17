@@ -10,9 +10,6 @@ export default defineNuxtPlugin({
 
     if (import.meta.server) {
       isLoggedIn.value = Boolean(nuxtApp.ssrContext?.event.context.auth?.userId)
-      if (!isLoggedIn.value) {
-        serverInitialState.value = undefined
-      }
     }
 
     watchEffect(() => {
