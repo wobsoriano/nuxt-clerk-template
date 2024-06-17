@@ -7,7 +7,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   if (import.meta.server) {
     const authContext = nuxtApp.ssrContext?.event.context.auth
-    serverInitialState.value = authContext ? JSON.parse(JSON.stringify(authContext)) : null
+    serverInitialState.value = authContext ? JSON.parse(JSON.stringify(authContext)) : undefined
   }
 
   nuxtApp.vueApp.use(clerkPlugin, {
