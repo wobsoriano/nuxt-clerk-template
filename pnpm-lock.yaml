@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@clerk/localizations':
-        specifier: ^2.4.5
-        version: 2.4.5
       '@nuxt/image':
         specifier: ^1.7.0
         version: 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)
@@ -310,10 +307,6 @@ packages:
     resolution: {integrity: sha512-KdMgvZHcMtOwR9VpzKzYGMKmhU7u7wGmOLsvJChHiR8T+DhGuxeEiY3vVUjPYUMf/9KMKnJYJnVepTDlMsqiyw==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/localizations@2.4.5':
-    resolution: {integrity: sha512-bwhbok+r4NfUC4fYQTFyCQyt3s5SfbiV3WrdymC3CkCqLWCtL3Lju8D0pG714+Q9VbLCNSGhG0KF5MsRLq/NLg==}
-    engines: {node: '>=18.17.0'}
-
   '@clerk/shared@2.3.0':
     resolution: {integrity: sha512-V/49MoOrALzpu0BbhYDCcKQYIjrHnhRa7QFho9+4wm94oCJgc9j3N5wxndJwj3Ur/fmIyBnjwMzDAT2nZZj47g==}
     engines: {node: '>=18.17.0'}
@@ -328,10 +321,6 @@ packages:
 
   '@clerk/types@4.6.0':
     resolution: {integrity: sha512-kowqVGqLfu0Zl2Pteum70MfkGHqBUoHHeR+u2+yWVl1lKHLCiyY1u8ntYBEIolAylBaQNDuRzxyMIDPSxjPE8g==}
-    engines: {node: '>=18.17.0'}
-
-  '@clerk/types@4.6.1':
-    resolution: {integrity: sha512-QFeNKPYDmTJ88l5QYG0SPwbABk42wRMalW3M/wAtr+wnQxBCXyX2XRZe9h4g2rH1VF+wG4Xe56abeeD+xE4iEw==}
     engines: {node: '>=18.17.0'}
 
   '@cloudflare/kv-asset-handler@0.3.2':
@@ -5441,10 +5430,6 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/localizations@2.4.5':
-    dependencies:
-      '@clerk/types': 4.6.1
-
   '@clerk/shared@2.3.0(react@18.3.1)':
     dependencies:
       '@clerk/types': 4.6.0
@@ -5456,10 +5441,6 @@ snapshots:
       react: 18.3.1
 
   '@clerk/types@4.6.0':
-    dependencies:
-      csstype: 3.1.1
-
-  '@clerk/types@4.6.1':
     dependencies:
       csstype: 3.1.1
 

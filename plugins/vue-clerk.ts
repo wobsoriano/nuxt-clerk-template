@@ -1,6 +1,5 @@
 import { clerkPlugin } from 'vue-clerk'
 import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend/internal'
-// import { frFR } from '@clerk/localizations'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
@@ -17,7 +16,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     publishableKey,
     routerPush: (to: string) => navigateTo(to),
     routerReplace: (to: string) => navigateTo(to, { replace: true }),
-    initialState: serverInitialState.value,
-    // locale: frFR,
+    initialState: serverInitialState.value
   })
 })
