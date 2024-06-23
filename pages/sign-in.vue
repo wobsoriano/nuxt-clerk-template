@@ -2,7 +2,7 @@
 import { SignIn } from 'vue-clerk'
 
 definePageMeta({
-  middleware: ['public'],
+  middleware: ['auth-logged-out'],
 })
 </script>
 

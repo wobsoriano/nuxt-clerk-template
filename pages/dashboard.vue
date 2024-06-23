@@ -4,7 +4,7 @@ const { data: user } = await useFetch('/api/protected', {
 })
 
 definePageMeta({
-  middleware: ['auth'],
+  middleware: ['auth-logged-in'],
 })
 </script>
 

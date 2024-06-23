@@ -2,7 +2,7 @@
 import { OrganizationProfile } from 'vue-clerk'
 
 definePageMeta({
-  middleware: ['auth'],
+  middleware: ['auth-logged-in'],
 })
 </script>
 
