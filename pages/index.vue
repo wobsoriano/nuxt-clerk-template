@@ -1,3 +1,9 @@
+<script setup>
+import { useAuth } from 'vue-clerk'
+
+const { isSignedIn } = useAuth()
+</script>
+
 <template>
   <main class="">
     <article class="grid lg:grid-cols-2">
@@ -11,7 +17,7 @@
         </p>
         <div class="flex gap-2 mt-8">
           <NuxtLink
-            href="/dashboard"
+            :href="isSignedIn ? '/dashboard' : '/sign-in'"
             class="flex content-center gap-2 px-4 py-2 font-semibold text-white transition-colors duration-200 rounded-lg bg-primary-600 hover:bg-primary-700"
           >
             View Demo
