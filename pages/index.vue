@@ -45,7 +45,7 @@
         This template repo uses some of the following features provided by
         Clerk. To learn more, read the
         <a
-          href="https://vue-clerk.vercel.app/"
+          href="https://vue-clerk.com/"
           class="font-medium text-primary-600 hover:underline"
         >
           Vue Clerk Docs
@@ -63,7 +63,7 @@
           </p>
           <div class="grow" />
           <a
-            href="https://vue-clerk.vercel.app/authentication/sign-in"
+            href="https://vue-clerk.com/authentication/sign-in"
             class="text-primary-600 cta hover:underline"
             target="_blank"
           >
@@ -80,7 +80,7 @@
           </p>
           <div class="grow" />
           <a
-            href="https://vue-clerk.vercel.app/composables/use-auth"
+            href="https://vue-clerk.com/composables/use-auth"
             class="text-primary-600 cta hover:underline"
             target="_blank"
           >

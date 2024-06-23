@@ -25,7 +25,7 @@ definePageMeta({
       Read the
       <NuxtLink
         class="font-medium text-primary-600 hover:underline"
-        href="https://vue-clerk.vercel.app"
+        href="https://vue-clerk.com"
         target="_blank"
       >
         Vue Clerk Docs -&gt;

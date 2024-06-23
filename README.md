@@ -4,7 +4,7 @@
 
 This template shows how to use [Clerk](https://www.clerk.com) in a Nuxt application. It is a direct port of the [Next.js starter template](https://github.com/clerk/clerk-nextjs-demo-app-router).
 
-Clerk is a developer-first authentication and user management solution. This starter uses [Vue Clerk](https://vue-clerk.vercel.app), which provides pre-built Vue components and composables for login, signup, user profile, and organization management. [Vue Clerk](https://vue-clerk.vercel.app) is designed to be easy to use and customize, and can be dropped into any Vue or Nuxt application.
+Clerk is a developer-first authentication and user management solution. This starter uses [Vue Clerk](https://vue-clerk.com), which provides pre-built Vue components and composables for login, signup, user profile, and organization management. [Vue Clerk](https://vue-clerk.com) is designed to be easy to use and customize, and can be dropped into any Vue or Nuxt application.
 
 This template allows you to get started with Clerk and Nuxt in a matter of minutes and includes:
 
@@ -36,5 +36,5 @@ To run the example locally you need to:
 To learn more about Clerk and Nuxt, check out the following resources:
 
 - [Clerk Documentation](https://clerk.com/docs)
-- [Vue Clerk](https://vue-clerk.vercel.app)
+- [Vue Clerk](https://vue-clerk.com)
 - [Nuxt Documentation](https://nuxt.com/docs)

@@ -74,7 +74,7 @@ useHead({
     <nav class="flex justify-end grow sm:gap-2">
       <a
         class="flex gap-2 px-3 py-2 text-sm font-semibold text-gray-600 transition duration-100 rounded-md hover:text-gray-800"
-        href="https://vue-clerk.vercel.app"
+        href="https://vue-clerk.com"
       >
         <div class="m-auto">
           <Icon name="Docs" />
