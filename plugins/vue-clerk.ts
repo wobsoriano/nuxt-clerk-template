@@ -8,8 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   // Installing the `withClerkMiddleware` from `h3-clerk` adds an `auth` object to the context.
   // We can then use the `auth` object to get the initial state of the user.
   if (import.meta.server) {
-    const event = useRequestEvent()
-    const authContext = event?.context.auth
+    const authContext = useRequestEvent()?.context.auth
     serverInitialState.value = authContext ? pruneUnserializableFields(authContext) : undefined
   }
 
