@@ -2,7 +2,7 @@ import { clerkPlugin } from 'vue-clerk'
 import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend/internal'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const publishableKey = useRuntimeConfig().public.clerkPublishableKey as string
+  const { publishableKey } = useRuntimeConfig().public
   const serverInitialState = useState<SignedInAuthObject | SignedOutAuthObject | undefined>('clerk-initial-state', () => undefined)
 
   // Installing the `withClerkMiddleware` from `h3-clerk` adds an `auth` object to the context.
@@ -16,7 +16,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     publishableKey,
     routerPush: (to: string) => navigateTo(to),
     routerReplace: (to: string) => navigateTo(to, { replace: true }),
-    initialState: serverInitialState.value
+    initialState: serverInitialState.value,
+    signInForceRedirectUrl: '/dashboard',
+    signUpForceRedirectUrl: '/dashboard',
+    signInUrl: '/sign-in',
+    signUpUrl: '/sign-up',
   })
 })
 

@@ -4,9 +4,12 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
   runtimeConfig: {
     public: {
-      clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY,
-    },
-    clerkSecretKey: process.env.CLERK_SECRET_KEY,
+      publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
+      signInUrl: process.env.CLERK_SIGN_IN_URL,
+      signUpUrl: process.env.CLERK_SIGN_UP_URL,
+      signInForceRedirectUrl: process.env.CLERK_SIGN_IN_FORCE_REDIRECT_URL,
+      signUpForceRedirectUrl: process.env.CLERK_SIGN_UP_FORCE_REDIRECT_URL,
+    }
   },
   googleFonts: {
     families: {
