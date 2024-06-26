@@ -2,10 +2,6 @@
 const { data: user } = await useFetch('/api/protected', {
   headers: useRequestHeaders(),
 })
-
-definePageMeta({
-  middleware: ['signed-in'],
-})
 </script>
 
 <template>
