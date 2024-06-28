@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxt/image": "^1.7.0",
     "h3": "^1.12.0",
-    "h3-clerk": "^0.4.5",
+    "h3-clerk": "^0.4.6",
     "node-fetch-native": "^1.6.4",
     "vue-clerk": "^0.4.3"
   },
