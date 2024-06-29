@@ -15,8 +15,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0
       h3-clerk:
-        specifier: ^0.4.6
-        version: 0.4.6(h3@1.12.0)(react@18.3.1)
+        specifier: ^0.4.7
+        version: 0.4.7(h3@1.12.0)(react@18.3.1)
       node-fetch-native:
         specifier: ^1.6.4
         version: 1.6.4
@@ -2593,8 +2593,8 @@ packages:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  h3-clerk@0.4.6:
-    resolution: {integrity: sha512-zKvGAMGh3nBvMzYGplXsP6lhivqgFEWfxJAdfq1wBQABUMKTozI3fjsprMOPVnuKIx6aHkVCBzKtCK/wHLT0Jg==}
+  h3-clerk@0.4.7:
+    resolution: {integrity: sha512-614ui+GrK9qcamAk0c3G0P4LPRR/Kp4OY6LvkORz+zsFHI4glsq1DsivUsIAW5EE9z4tyWZK5wZSQqoN9h026w==}
     peerDependencies:
       h3: ^1.8.0
 
@@ -7764,7 +7764,7 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  h3-clerk@0.4.6(h3@1.12.0)(react@18.3.1):
+  h3-clerk@0.4.7(h3@1.12.0)(react@18.3.1):
     dependencies:
       '@clerk/backend': 1.2.4(react@18.3.1)
       '@clerk/shared': 2.3.1(react@18.3.1)
