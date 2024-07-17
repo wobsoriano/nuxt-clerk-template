@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { OrganizationSwitcher, UserButton } from 'vue-clerk';
+import { OrganizationSwitcher, UserButton } from 'vue-clerk'
 
 import { DASHBOARD_CARDS } from '~/consts/cards'
 </script>

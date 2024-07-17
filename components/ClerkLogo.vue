@@ -1,5 +1,5 @@
 <template>
-  <a href="https://clerk.com/docs" target="_blank">
+  <NuxtLink href="https://clerk.com/docs" target="_blank">
     <svg
       width="24"
       height="24"
@@ -21,5 +21,5 @@
         fill-opacity="0.5"
       />
     </svg>
-  </a>
+  </NuxtLink>
 </template>

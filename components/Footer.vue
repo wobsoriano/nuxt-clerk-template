@@ -34,11 +34,11 @@
     <ul class="flex gap-2 ml-auto">
       <li>
         <a
-          href="https://clerk.com/docs?utm_source=vercel-template&utm_medium=template_repos&utm_campaign=nextjs_template"
+          href="https://vue-clerk.com"
           target="_blank"
           class="flex items-center gap-2 font-medium text-[0.8125rem] rounded-full px-3 py-2 hover:bg-gray-100"
         >
-          Clerk Docs{" "}
+          Vue Clerk Docs
           <svg
             width="16"
             height="16"
