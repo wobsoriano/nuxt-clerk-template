@@ -1,19 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 
   runtimeConfig: {
     public: {
       publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
-    }
-  },
-
-  googleFonts: {
-    families: {
-      Inter: true,
     },
-    subsets: 'latin',
   },
 
   compatibilityDate: '2024-07-02',

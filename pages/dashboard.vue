@@ -1,31 +1,44 @@
 <script setup lang="ts">
-const { data: user } = await useFetch('/api/protected', {
-  headers: useRequestHeaders(),
-})
+import { OrganizationSwitcher, UserButton } from 'vue-clerk'
+
+import { DASHBOARD_CARDS } from '~/consts/cards'
 </script>
 
 <template>
-  <div class="px-8 py-12 sm:py-16 md:px-20">
-    <template v-if="user">
-      <h1 class="text-3xl font-semibold text-black">
-        👋 Hi, {{ user.firstName || `Stranger` }}
-      </h1>
-      <div class="grid gap-4 mt-8 lg:grid-cols-3">
+  <main class="max-w-[75rem] w-full mx-auto">
+    <div class="grid grid-cols-[1fr_20.5rem] gap-10 pb-10">
+      <div>
+        <header class="flex items-center justify-between w-full h-16 gap-4">
+          <div class="flex gap-4">
+            <ClerkLogo />
+            <div aria-hidden class="w-px h-6 bg-[#C7C7C8]" />
+            <NuxtLogo />
+          </div>
+          <div class="flex items-center gap-2">
+            <OrganizationSwitcher
+              :appearance="{
+                elements: {
+                  organizationPreviewAvatarBox: 'size-6',
+                },
+              }"
+            />
+            <UserButton
+              after-sign-out-url="/"
+              :appearance="{
+                elements: {
+                  userButtonAvatarBox: 'size-6',
+                },
+              }"
+            />
+          </div>
+        </header>
         <UserDetails />
-        <SessionDetails />
-        <OrgDetails />
       </div>
-      <h2 class="mt-16 mb-4 text-3xl font-semibold text-black">
-        What's next?
-      </h2>
-      Read the
-      <NuxtLink
-        class="font-medium text-primary-600 hover:underline"
-        href="https://vue-clerk.com"
-        target="_blank"
-      >
-        Vue Clerk Docs -&gt;
-      </NuxtLink>
-    </template>
-  </div>
+      <div class="pt-[3.5rem]">
+        <CodeSwitcher />
+      </div>
+    </div>
+  </main>
+  <LearnMore :cards="DASHBOARD_CARDS" />
+  <Footer />
 </template>
