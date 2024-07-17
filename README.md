@@ -1,6 +1,4 @@
-# Nuxt Clerk Template
-
-![Nuxt_js Clerk Template · 11 39am · 02-03](https://github.com/wobsoriano/nuxt-clerk-template/assets/13049130/2ef8cc8a-80e9-4e9f-994e-904ccaf48b36)
+# Clerk and Nuxt template
 
 This template shows how to use [Clerk](https://www.clerk.com) in a Nuxt application. It is a direct port of the [Next.js starter template](https://github.com/clerk/clerk-nextjs-demo-app-router).
 
