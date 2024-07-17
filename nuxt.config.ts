@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
-    }
+    },
   },
 
   googleFonts: {
