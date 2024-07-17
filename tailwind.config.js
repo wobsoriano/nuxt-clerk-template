@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   theme: {
     extend: {
       colors: {
@@ -8,6 +8,10 @@ module.exports = {
         'primary-50': '#F4F2FF',
         'success-700': '#027A48',
         'success-50': '#ECFDF3',
+      },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
     },
   },
