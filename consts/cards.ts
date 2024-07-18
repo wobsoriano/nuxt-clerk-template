@@ -7,10 +7,10 @@ export const CARDS = [
     linkText: 'Component Reference',
   },
   {
-    title: 'React Hooks',
-    description: `Build custom functionality by accessing auth state, user and session data, and more with Clerk's React Hooks.`,
-    href: 'https://clerk.com/docs/references/react/use-user?utm_source=vercel-template&utm_medium=partner&utm_term=react_hooks',
-    linkText: 'React Hooks',
+    title: 'Vue Composables',
+    description: `Build custom functionality by accessing auth state, user and session data, and more with Vue Clerk's composables'.`,
+    href: 'https://www.vue-clerk.com/composables/use-auth',
+    linkText: 'Vue Composables',
   },
   {
     title: 'Organizations',
