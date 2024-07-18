@@ -1,9 +1,9 @@
 import { clerkPlugin } from 'vue-clerk'
-import type { SignedInAuthObject, SignedOutAuthObject } from '@clerk/backend/internal'
+import type { AuthObject } from '@clerk/backend/internal'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { publishableKey } = useRuntimeConfig().public
-  const serverInitialState = useState<SignedInAuthObject | SignedOutAuthObject | undefined>('clerk-initial-state', () => undefined)
+  const serverInitialState = useState<AuthObject | undefined>('clerk-initial-state', () => undefined)
 
   // Installing the `withClerkMiddleware` from `h3-clerk` adds an `auth` object to the context.
   // We can then use the `auth` object to get the initial state of the user.
@@ -39,6 +39,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
 })
 
-function pruneUnserializableFields(authContext: SignedInAuthObject | SignedOutAuthObject) {
+function pruneUnserializableFields(authContext: AuthObject) {
   return JSON.parse(JSON.stringify(authContext))
 }
