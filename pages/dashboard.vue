@@ -28,6 +28,7 @@ import { DASHBOARD_CARDS } from '~/consts/cards'
                   userButtonAvatarBox: 'size-6',
                 },
               }"
+              default-open
             />
           </div>
         </header>
