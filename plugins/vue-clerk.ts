@@ -21,6 +21,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     signUpForceRedirectUrl: '/dashboard',
     signInUrl: '/sign-in',
     signUpUrl: '/sign-up',
+    afterSignOutUrl: '/',
     appearance: {
       variables: { colorPrimary: '#000000' },
       elements: {

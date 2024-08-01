@@ -23,7 +23,6 @@ import { DASHBOARD_CARDS } from '~/consts/cards'
               }"
             />
             <UserButton
-              after-sign-out-url="/"
               :appearance="{
                 elements: {
                   userButtonAvatarBox: 'size-6',
