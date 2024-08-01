@@ -46,10 +46,8 @@ import { CARDS } from '~/consts/cards'
             </NuxtLink>
           </SignedIn>
           <SignedOut>
-            <SignInButton v-slot="{ handler }">
-              <button class="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold" @click="handler">
-                Sign In
-              </button>
+            <SignInButton class="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold">
+              Sign In
             </SignInButton>
           </SignedOut>
           <NuxtLink
