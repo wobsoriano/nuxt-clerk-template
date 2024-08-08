@@ -15,14 +15,14 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0
       h3-clerk:
-        specifier: ^0.4.9
-        version: 0.4.9(h3@1.12.0)(react@18.3.1)
+        specifier: ^0.4.11
+        version: 0.4.11(h3@1.12.0)(react@18.3.1)
       node-fetch-native:
         specifier: ^1.6.4
         version: 1.6.4
       vue-clerk:
-        specifier: ^0.4.14
-        version: 0.4.14(react@18.3.1)(vue@3.4.35(typescript@5.5.4))
+        specifier: ^0.4.16
+        version: 0.4.16(react@18.3.1)(vue@3.4.35(typescript@5.5.4))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.21.2
@@ -265,12 +265,12 @@ packages:
     bundledDependencies:
       - is-unicode-supported
 
-  '@clerk/backend@1.5.0':
-    resolution: {integrity: sha512-uJUcA4oIDfTkjhjcjnlnarjuLXp5rVvtXB1/HtFKLXfvm8SveH5D3w97IeiUDNMvggxBo1Q/faBDBjEJxTV9Cw==}
+  '@clerk/backend@1.6.2':
+    resolution: {integrity: sha512-Tiidp1dBs/vBQ82yL+HgRa7GlNjTNjBPNUQj2+Tn176i02wglgTfLWivDzuRwAe/cdf7gu/8OBWTxOF59L4KRQ==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/shared@2.4.2':
-    resolution: {integrity: sha512-8AZg7Qus7nGBwhbdJINV1NR0vAbOYtv/m8C9VdASHW/DzamNJvyf9d61E1DLZGTTjQw/Fja9zolq9CcWT5d6NA==}
+  '@clerk/shared@2.5.0':
+    resolution: {integrity: sha512-dYRlFQJN4YIQbYJHCDKd5yLF7rcI42pw2JOQEKiOAWPiAMlmhTtiEL0YWMVoGNaGRI72fyIge6/+V7r9WWT0wg==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: '>=18 || >=19.0.0-beta'
@@ -281,8 +281,8 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/types@4.10.0':
-    resolution: {integrity: sha512-Yy4m+aCrvVHT8BVNGDi40hcSUTwMf5o+cBHhAQQTofzCikc+DRI6yL7aYT6nf2YJ5gfm7WdeUwPM8Zz08TDzNA==}
+  '@clerk/types@4.13.0':
+    resolution: {integrity: sha512-W/iZ5ig35UgJHmZqqgO1tosHuGtdKR8e+f8FJWphpdIW6KNCK+Oxc5lOO/hJU1c9aih0x5QdlLrKsqF3S8JKdA==}
     engines: {node: '>=18.17.0'}
 
   '@cloudflare/kv-asset-handler@0.3.4':
@@ -2550,8 +2550,8 @@ packages:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  h3-clerk@0.4.9:
-    resolution: {integrity: sha512-seo0rmjf25Ha1lBbXfsSXsCVS2Bd+Zq0Kj4FPxCKrg1+/Fjlq/81X8YBiXUKeiFcznn1Ja1UHEju9lRWbDj40g==}
+  h3-clerk@0.4.11:
+    resolution: {integrity: sha512-ukvQFTk7Si2fQfR4HCUr91JYz9RqB9TiEZGxcGloVt474J0pwPJDUhlMCKB1Q/uweYBiQ2n+IJu8svGdFX1ZBQ==}
     peerDependencies:
       h3: ^1.8.0
 
@@ -4472,8 +4472,8 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-clerk@0.4.14:
-    resolution: {integrity: sha512-r6K69t9BhvP4KUVG5qh9iSljvKOqKzEWSWiH327g/DarNibpKtLHxxJgi+6YhiyG1jUUR8oQSjVD7p28Ce7j6Q==}
+  vue-clerk@0.4.16:
+    resolution: {integrity: sha512-nw74U61T8LGgoaURMcaKNKj97aoz8hkd1U2Yu2+XyYfI206cdWkBuAWROWmhjbVn9HpTkt7uGUMB2UYe2W/FgA==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -4883,10 +4883,10 @@ snapshots:
       picocolors: 1.0.1
       sisteransi: 1.0.5
 
-  '@clerk/backend@1.5.0(react@18.3.1)':
+  '@clerk/backend@1.6.2(react@18.3.1)':
     dependencies:
-      '@clerk/shared': 2.4.2(react@18.3.1)
-      '@clerk/types': 4.10.0
+      '@clerk/shared': 2.5.0(react@18.3.1)
+      '@clerk/types': 4.13.0
       cookie: 0.5.0
       snakecase-keys: 5.4.4
       tslib: 2.4.1
@@ -4894,9 +4894,9 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/shared@2.4.2(react@18.3.1)':
+  '@clerk/shared@2.5.0(react@18.3.1)':
     dependencies:
-      '@clerk/types': 4.10.0
+      '@clerk/types': 4.13.0
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
       std-env: 3.7.0
@@ -4904,7 +4904,7 @@ snapshots:
     optionalDependencies:
       react: 18.3.1
 
-  '@clerk/types@4.10.0':
+  '@clerk/types@4.13.0':
     dependencies:
       csstype: 3.1.1
 
@@ -7404,10 +7404,10 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  h3-clerk@0.4.9(h3@1.12.0)(react@18.3.1):
+  h3-clerk@0.4.11(h3@1.12.0)(react@18.3.1):
     dependencies:
-      '@clerk/backend': 1.5.0(react@18.3.1)
-      '@clerk/shared': 2.4.2(react@18.3.1)
+      '@clerk/backend': 1.6.2(react@18.3.1)
+      '@clerk/shared': 2.5.0(react@18.3.1)
       h3: 1.12.0
     transitivePeerDependencies:
       - react
@@ -9590,10 +9590,10 @@ snapshots:
     dependencies:
       ufo: 1.5.4
 
-  vue-clerk@0.4.14(react@18.3.1)(vue@3.4.35(typescript@5.5.4)):
+  vue-clerk@0.4.16(react@18.3.1)(vue@3.4.35(typescript@5.5.4)):
     dependencies:
-      '@clerk/shared': 2.4.2(react@18.3.1)
-      '@clerk/types': 4.10.0
+      '@clerk/shared': 2.5.0(react@18.3.1)
+      '@clerk/types': 4.13.0
       vue: 3.4.35(typescript@5.5.4)
     transitivePeerDependencies:
       - react
