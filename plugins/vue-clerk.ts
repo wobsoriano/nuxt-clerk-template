@@ -1,5 +1,5 @@
 import { clerkPlugin } from 'vue-clerk'
-import type { AuthObject } from '@clerk/backend/internal'
+import type { AuthObject } from '@clerk/backend'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { publishableKey } = useRuntimeConfig().public
