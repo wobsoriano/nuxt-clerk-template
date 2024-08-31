@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxthub/core', 'vue-clerk/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'vue-clerk/nuxt'],
 
   clerk: {
     publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
@@ -28,11 +28,4 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-07-02',
-
-  // hub: {
-  //   database: true,
-  //   kv: true,
-  //   blob: true,
-  //   cache: true,
-  // },
 })
