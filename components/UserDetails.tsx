@@ -1,5 +1,3 @@
-import { useOrganization, useSession, useUser } from 'vue-clerk'
-
 const Row = defineComponent((props: { desc: string, value: string }, { slots }) => {
   return () => (
     <div class="h-[2.125rem] grid grid-cols-2 items-center relative">
