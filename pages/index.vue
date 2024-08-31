@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { SignInButton, SignedIn, SignedOut } from 'vue-clerk'
 import { CARDS } from '~/consts/cards'
 </script>
 
