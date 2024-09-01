@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'vue-clerk/nuxt'],
 
   clerk: {
+    publishableKey: process.env.CLERK_PUBLISHABLE_KEY,
     signInForceRedirectUrl: '/dashboard',
     signUpForceRedirectUrl: '/dashboard',
     signInUrl: '/sign-in',
