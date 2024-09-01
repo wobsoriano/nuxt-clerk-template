@@ -4,11 +4,6 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'vue-clerk/nuxt'],
 
   clerk: {
-    signInForceRedirectUrl: '/dashboard',
-    signUpForceRedirectUrl: '/dashboard',
-    signInUrl: '/sign-in',
-    signUpUrl: '/sign-up',
-    afterSignOutUrl: '/',
     appearance: {
       variables: { colorPrimary: '#000000' },
       elements: {
