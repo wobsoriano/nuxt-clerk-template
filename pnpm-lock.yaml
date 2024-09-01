@@ -18,8 +18,8 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       vue-clerk:
-        specifier: ^0.6.5
-        version: 0.6.5(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4))
+        specifier: ^0.6.6
+        version: 0.6.6(@clerk/backend@1.9.0(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.21.2
@@ -2488,11 +2488,6 @@ packages:
     resolution: {integrity: sha512-O1Ld7Dr+nqPnmGpdhzLmMTQ4vAsD+rHwMm1NLUmoUFFymBOMKxCCrtDxqdBRYXdeEPEi3SyoR4TizJLQrnKBNA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  h3-clerk@0.4.12:
-    resolution: {integrity: sha512-caFygiB+fwWrgImSDEvSnUdD2+YlpzSZ+SMBlUM+Ju7vV3R/uwXgWGhJXGWxmlRGOl+hmtpjlbRJk/NxtcfL+w==}
-    peerDependencies:
-      h3: ^1.8.0
-
   h3@1.12.0:
     resolution: {integrity: sha512-Zi/CcNeWBXDrFNlV0hUBJQR9F7a96RjMeAZweW/ZWkR9fuXrMcvKnSA63f/zZ9l0GgQOZDVHGvXivNN9PWOwhA==}
 
@@ -4411,13 +4406,13 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-clerk@0.6.5:
-    resolution: {integrity: sha512-0iWmgRrA+A3lbys57j5TH16W/5syD1WvHkk9QsJGpPSGXLCAPk4GZ5ZhpFH4JxPc5p1vF3v+CTz0InuI5ribsQ==}
+  vue-clerk@0.6.6:
+    resolution: {integrity: sha512-uWTModtqu3eLF0H/PSybI3bqFbAfCxhFt1lHKI1rMJrlYqYn3Aidq80Yt3/np+ePClp8joaaoZ5pdljD93cqXg==}
     peerDependencies:
-      h3-clerk: ^0.4.12
+      '@clerk/backend': ^1.9.0
       vue: ^3.2.0
     peerDependenciesMeta:
-      h3-clerk:
+      '@clerk/backend':
         optional: true
 
   vue-devtools-stub@0.1.0:
@@ -7252,16 +7247,6 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1):
-    dependencies:
-      '@clerk/backend': 1.9.0(react@18.3.1)
-      '@clerk/shared': 2.6.0(react@18.3.1)
-      h3: 1.12.0
-    transitivePeerDependencies:
-      - react
-      - react-dom
-    optional: true
-
   h3@1.12.0:
     dependencies:
       cookie-es: 1.2.2
@@ -9445,13 +9430,13 @@ snapshots:
     dependencies:
       ufo: 1.5.4
 
-  vue-clerk@0.6.5(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4)):
+  vue-clerk@0.6.6(@clerk/backend@1.9.0(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4)):
     dependencies:
       '@clerk/shared': 2.6.0(react@18.3.1)
       '@clerk/types': 4.17.0
       vue: 3.4.38(typescript@5.5.4)
     optionalDependencies:
-      h3-clerk: 0.4.12(h3@1.12.0)(react@18.3.1)
+      '@clerk/backend': 1.9.0(react@18.3.1)
     transitivePeerDependencies:
       - react
       - react-dom
