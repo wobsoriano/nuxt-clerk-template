@@ -1,4 +1,4 @@
-import { clerkClient, getAuth } from 'h3-clerk'
+import { clerkClient, getAuth } from '#clerk'
 
 export default eventHandler(async (event) => {
   const { userId } = getAuth(event)
@@ -8,5 +8,5 @@ export default eventHandler(async (event) => {
     return
   }
 
-  return await clerkClient.users.getUser(userId)
+  return await clerkClient(event).users.getUser(userId)
 })

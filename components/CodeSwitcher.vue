@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
-import { useOrganization, useSession, useUser } from 'vue-clerk'
 
 const TYPES = ['user', 'session', 'organization']
 

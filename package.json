@@ -11,11 +11,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@clerk/backend": "^1.9.0",
     "@nuxt/image": "^1.7.0",
-    "h3": "^1.12.0",
-    "h3-clerk": "^0.4.12",
     "node-fetch-native": "^1.6.4",
-    "vue-clerk": "^0.4.20"
+    "vue-clerk": "https://pkg.pr.new/vue-clerk@127"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
