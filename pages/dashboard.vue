@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { DASHBOARD_CARDS } from '~/consts/cards'
+
+definePageMeta({ middleware: 'auth' })
 </script>
 
 <template>

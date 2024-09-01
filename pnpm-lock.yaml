@@ -18,8 +18,8 @@ importers:
         specifier: ^1.6.4
         version: 1.6.4
       vue-clerk:
-        specifier: https://pkg.pr.new/vue-clerk@127
-        version: https://pkg.pr.new/vue-clerk@127(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4))
+        specifier: ^0.6.5
+        version: 0.6.5(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.21.2
@@ -4411,9 +4411,8 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-clerk@https://pkg.pr.new/vue-clerk@127:
-    resolution: {tarball: https://pkg.pr.new/vue-clerk@127}
-    version: 0.6.3
+  vue-clerk@0.6.5:
+    resolution: {integrity: sha512-0iWmgRrA+A3lbys57j5TH16W/5syD1WvHkk9QsJGpPSGXLCAPk4GZ5ZhpFH4JxPc5p1vF3v+CTz0InuI5ribsQ==}
     peerDependencies:
       h3-clerk: ^0.4.12
       vue: ^3.2.0
@@ -9446,7 +9445,7 @@ snapshots:
     dependencies:
       ufo: 1.5.4
 
-  vue-clerk@https://pkg.pr.new/vue-clerk@127(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4)):
+  vue-clerk@0.6.5(h3-clerk@0.4.12(h3@1.12.0)(react@18.3.1))(react@18.3.1)(vue@3.4.38(typescript@5.5.4)):
     dependencies:
       '@clerk/shared': 2.6.0(react@18.3.1)
       '@clerk/types': 4.17.0
