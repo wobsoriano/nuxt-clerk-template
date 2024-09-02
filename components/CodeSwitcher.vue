@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 
 const TYPES = ['user', 'session', 'organization']
 
@@ -8,6 +8,11 @@ declare global {
     Prism: {
       highlight: (...args: any) => string
       languages: Record<string, any>
+      plugins: {
+        autoloader: {
+          loadLanguages: (languages: string[], callback: () => void) => void
+        }
+      }
     }
   }
 }
@@ -16,6 +21,12 @@ const selectedType = ref(TYPES[0])
 const { user } = useUser()
 const { session } = useSession()
 const { organization } = useOrganization()
+
+const typesToShow = computed(() => {
+  return organization.value
+    ? TYPES
+    : TYPES.filter(type => type !== 'organization')
+})
 
 const selectedCode = computed(() => {
   return JSON.stringify(
@@ -29,30 +40,7 @@ const selectedCode = computed(() => {
   )
 })
 
-const typesToShow = computed(() => {
-  return organization.value
-    ? TYPES
-    : TYPES.filter(type => type !== 'organization')
-})
-
-const renderedCode = ref('')
-
-onMounted(() => {
-  watch(
-    selectedCode,
-    (value) => {
-      if (!value) {
-        return
-      }
-      renderedCode.value = window.Prism.highlight(
-        value,
-        window.Prism.languages.javascript,
-        'javascript',
-      )
-    },
-    { immediate: true },
-  )
-})
+const { renderedCode } = useCodeHighlighter(selectedCode)
 </script>
 
 <template>
