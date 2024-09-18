@@ -15,7 +15,7 @@
     "@clerk/backend": "^1.13.1",
     "@nuxt/image": "^1.8.0",
     "node-fetch-native": "^1.6.4",
-    "vue-clerk": "^0.6.11"
+    "vue-clerk": "^0.6.12"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
