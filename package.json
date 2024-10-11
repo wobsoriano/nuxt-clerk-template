@@ -12,10 +12,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/backend": "^1.13.4",
-    "@nuxt/image": "^1.8.0",
+    "@clerk/backend": "^1.13.9",
+    "@nuxt/image": "^1.8.1",
     "node-fetch-native": "^1.6.4",
-    "vue-clerk": "^0.6.15"
+    "vue-clerk": "^0.6.18"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.1",
