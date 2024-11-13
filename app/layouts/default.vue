@@ -18,7 +18,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtPage />
+  <slot />
 </template>
 
 <style>

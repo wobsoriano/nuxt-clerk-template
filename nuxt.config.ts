@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'vue-clerk/nuxt'],
 
@@ -21,5 +25,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-07-02',
+  compatibilityDate: '2024-11-13',
 })
