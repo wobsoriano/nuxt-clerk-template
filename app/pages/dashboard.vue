@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { DASHBOARD_CARDS } from '~/consts/cards'
-
-definePageMeta({ middleware: 'auth', auth: { guestRedirectUrl: '/sign-in' } })
 </script>
 
 <template>

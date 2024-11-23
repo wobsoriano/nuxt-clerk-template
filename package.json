@@ -12,17 +12,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/backend": "^1.16.2",
+    "@clerk/nuxt": "^0.0.4",
     "@nuxt/image": "^1.8.1",
-    "node-fetch-native": "^1.6.4",
-    "vue-clerk": "^0.8.3"
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.1",
-    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "@types/node": "^20.16.8",
     "eslint": "^9.11.1",
-    "nuxt": "^3.14.159",
+    "nuxt": "^3.14.1592",
     "typescript": "latest"
-  }
+  },
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
 }
