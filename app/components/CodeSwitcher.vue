@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 const TYPES = ['user', 'session', 'organization']
 
 declare global {

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'vue-clerk/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@clerk/nuxt'],
 
   clerk: {
     appearance: {
