@@ -12,8 +12,8 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/nuxt": "^1.0.3",
-    "@nuxt/image": "^1.8.1",
+    "@clerk/nuxt": "^1.0.11",
+    "@nuxt/image": "^1.9.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
