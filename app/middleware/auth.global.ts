@@ -1,13 +1,14 @@
+const isProtectedPage = createRouteMatcher(['/dashboard'])
+const isGuestPage = createRouteMatcher(['/sign-in', '/sign-up'])
+
 export default defineNuxtRouteMiddleware((to) => {
   const { userId } = useAuth()
-  const isProtectedPage = ['/dashboard'].includes(to.path)
-  const isGuestPage = ['/sign-in', '/sign-up'].includes(to.path)
 
-  if (userId.value && isGuestPage) {
+  if (userId.value && isGuestPage(to)) {
     return navigateTo('/dashboard')
   }
 
-  if (!userId.value && isProtectedPage) {
+  if (!userId.value && isProtectedPage(to)) {
     return navigateTo('/sign-in')
   }
 })
