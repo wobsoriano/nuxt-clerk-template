@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@clerk/nuxt':
-        specifier: ^1.1.0
-        version: 1.1.0(magicast@0.3.5)(react@19.0.0)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))
+        specifier: ^1.3.1
+        version: 1.3.1(magicast@0.3.5)(react@19.0.0)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))
       '@nuxt/image':
         specifier: ^1.9.0
         version: 1.9.0(db0@0.2.1)(ioredis@5.4.2)(magicast@0.3.5)(rollup@4.30.1)
@@ -248,16 +248,16 @@ packages:
   '@clack/prompts@0.9.1':
     resolution: {integrity: sha512-JIpyaboYZeWYlyP0H+OoPPxd6nqueG/CmN6ixBiNFsIDHREevjIf0n0Ohh5gr5C8pEDknzgvz+pIJ8dMhzWIeg==}
 
-  '@clerk/backend@1.23.10':
-    resolution: {integrity: sha512-o9NbiqJ3n1Xgq1H1LVug6RPSB8rTO9BgUUPyEaowzHotjHgXgTtEE63y6TdtHGI7BRXwIjAw75II72kLvBi8RA==}
+  '@clerk/backend@1.25.0':
+    resolution: {integrity: sha512-ga+SZsuqvHN+9zu+m838QSOd9NVMf/jhSzCgyC1zt4PUnbL/I5Q3dUxz+nR5ELo4Icc+Z9Ad0DdAE9r3OtbIbw==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/nuxt@1.1.0':
-    resolution: {integrity: sha512-26UC1LyOicrk1eFQmctymiFmQhR2nlUlmOsDTCkJvqIojBfwKEdRpw9kEG6k0FZ56ddK0KOjEeM6VwSa+kD2Rw==}
+  '@clerk/nuxt@1.3.1':
+    resolution: {integrity: sha512-BE3j7FbKFAqN+ZPISD+XRzHDX7eO9B3g2YmMm65XbAqe047cfr0y/Gudyf3RT6hf3MPOaxiQzIDv5X04P6MMnA==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/shared@2.20.17':
-    resolution: {integrity: sha512-rBV6enYoFhhsH8XSyQmk/eQN/P51i2HGdQmo/o5ef6wVfRb+5U5J9fTGtiP6Jm0Cn/u/2lQYTXpdiWcPtKTtZQ==}
+  '@clerk/shared@3.0.0':
+    resolution: {integrity: sha512-c5TUTMrir4yrxdQh2xiILowFvHZydBIuX1tFOKKWQZsNqlFYXbbeUHDxEIcxvb4uarGSiuEzVsx6S2hT2ZBCQQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -268,12 +268,12 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/types@4.44.3':
-    resolution: {integrity: sha512-WyBe4pgM9W1Rt1p8KTmTDVDALADnnQoUyOk76XI0fDr63w7LMdSAhhwYiTqR9aMWaHY1/mtbOWqZ5wILCEVvDQ==}
+  '@clerk/types@4.47.0':
+    resolution: {integrity: sha512-xB/gqMq6cq6/47ymKs0WaaxKEFPzlvbSgJTLFIfnPMnFSNwYE4WVgVh6geFx6qWr3z588JDDZkJskBHZlgPmQQ==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/vue@1.1.9':
-    resolution: {integrity: sha512-l+R9UBgpzUvqlUbVPzDC0KlSu9pqKHs7hUuYieHLz/1GwkJGDMI7OuTCoTm5J8Jtj6zAaNv8vq0ievCy2/Y4hA==}
+  '@clerk/vue@1.3.0':
+    resolution: {integrity: sha512-DMHzRqYRtH/6z1sBH8vwKp+kn2K0gqZSBelTO+99onMzzbQmNURuVsYFU3VesK2d8y7rYl8Wk3SI3NUk1hWzZw==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       vue: ^3.2.0
@@ -1754,9 +1754,6 @@ packages:
   csso@5.0.5:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
-
-  csstype@3.1.1:
-    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
@@ -3992,6 +3989,9 @@ packages:
   std-env@3.8.0:
     resolution: {integrity: sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w==}
 
+  std-env@3.8.1:
+    resolution: {integrity: sha512-vj5lIj3Mwf9D79hBkltk5qmkFI+biIKWS2IBxEyEU3AX1tUf7AoL8nSazCOiiqQsGKIq01SClsKEzweu34uwvA==}
+
   streamx@2.21.1:
     resolution: {integrity: sha512-PhP9wUnFLa+91CPy3N6tiQsK+gnYyUNuk15S3YG/zjYE7RuPeCjJngqnzpC31ow0lzBHQ+QGO4cNJnd0djYUsw==}
 
@@ -4074,8 +4074,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  swr@2.3.0:
-    resolution: {integrity: sha512-NyZ76wA4yElZWBHzSgEJc28a0u6QZvhb6w0azeL2k7+Q1gAzVK+IqQYXhVOC/mzi+HZIozrZvBVeSeOZNR2bqA==}
+  swr@2.3.2:
+    resolution: {integrity: sha512-RosxFpiabojs75IwQ316DGoDRmOqtiAj0tg8wCcbEu4CiLZBs/a9QNtHV7TUfDXmmlgqij/NqzKq/eLelyv9xA==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -4218,8 +4218,8 @@ packages:
     resolution: {integrity: sha512-rfgpoi08xagF3JSdtJlCwMq9DGNDE0IMh3Mkpc1wUypg9vPi786AiqeBBKcqvIkq42azsBM85N490fyZjeUftw==}
     engines: {node: '>=16'}
 
-  type-fest@4.33.0:
-    resolution: {integrity: sha512-s6zVrxuyKbbAsSAD5ZPTB77q4YIdRctkTbJ2/Dqlinwz+8ooH2gd+YA7VA6Pa93KML9GockVvoxjZ2vHP+mu8g==}
+  type-fest@4.37.0:
+    resolution: {integrity: sha512-S/5/0kFftkq27FPNye0XM1e2NsnoD/3FS+pBmbjmmtLT6I+i344KoOf7pvXreaFsDamWeaJX55nczA1m5PsBDg==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -4952,10 +4952,10 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@clerk/backend@1.23.10(react@19.0.0)':
+  '@clerk/backend@1.25.0(react@19.0.0)':
     dependencies:
-      '@clerk/shared': 2.20.17(react@19.0.0)
-      '@clerk/types': 4.44.3
+      '@clerk/shared': 3.0.0(react@19.0.0)
+      '@clerk/types': 4.47.0
       cookie: 1.0.2
       snakecase-keys: 8.0.1
       tslib: 2.4.1
@@ -4963,12 +4963,12 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/nuxt@1.1.0(magicast@0.3.5)(react@19.0.0)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))':
+  '@clerk/nuxt@1.3.1(magicast@0.3.5)(react@19.0.0)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
-      '@clerk/backend': 1.23.10(react@19.0.0)
-      '@clerk/shared': 2.20.17(react@19.0.0)
-      '@clerk/types': 4.44.3
-      '@clerk/vue': 1.1.9(react@19.0.0)(vue@3.5.13(typescript@5.7.3))
+      '@clerk/backend': 1.25.0(react@19.0.0)
+      '@clerk/shared': 3.0.0(react@19.0.0)
+      '@clerk/types': 4.47.0
+      '@clerk/vue': 1.3.0(react@19.0.0)(vue@3.5.13(typescript@5.7.3))
       '@nuxt/kit': 3.15.4(magicast@0.3.5)(rollup@4.30.1)
       '@nuxt/schema': 3.15.4
       h3: 1.14.0
@@ -4980,25 +4980,25 @@ snapshots:
       - supports-color
       - vue
 
-  '@clerk/shared@2.20.17(react@19.0.0)':
+  '@clerk/shared@3.0.0(react@19.0.0)':
     dependencies:
-      '@clerk/types': 4.44.3
+      '@clerk/types': 4.47.0
       dequal: 2.0.3
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
-      std-env: 3.8.0
-      swr: 2.3.0(react@19.0.0)
+      std-env: 3.8.1
+      swr: 2.3.2(react@19.0.0)
     optionalDependencies:
       react: 19.0.0
 
-  '@clerk/types@4.44.3':
+  '@clerk/types@4.47.0':
     dependencies:
-      csstype: 3.1.1
+      csstype: 3.1.3
 
-  '@clerk/vue@1.1.9(react@19.0.0)(vue@3.5.13(typescript@5.7.3))':
+  '@clerk/vue@1.3.0(react@19.0.0)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
-      '@clerk/shared': 2.20.17(react@19.0.0)
-      '@clerk/types': 4.44.3
+      '@clerk/shared': 3.0.0(react@19.0.0)
+      '@clerk/types': 4.47.0
       vue: 3.5.13(typescript@5.7.3)
     transitivePeerDependencies:
       - react
@@ -6679,8 +6679,6 @@ snapshots:
   csso@5.0.5:
     dependencies:
       css-tree: 2.2.1
-
-  csstype@3.1.1: {}
 
   csstype@3.1.3: {}
 
@@ -9375,7 +9373,7 @@ snapshots:
     dependencies:
       map-obj: 4.3.0
       snake-case: 3.0.4
-      type-fest: 4.33.0
+      type-fest: 4.37.0
 
   source-map-js@1.2.1: {}
 
@@ -9418,6 +9416,8 @@ snapshots:
   statuses@2.0.1: {}
 
   std-env@3.8.0: {}
+
+  std-env@3.8.1: {}
 
   streamx@2.21.1:
     dependencies:
@@ -9514,7 +9514,7 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
 
-  swr@2.3.0(react@19.0.0):
+  swr@2.3.2(react@19.0.0):
     dependencies:
       dequal: 2.0.3
       react: 19.0.0
@@ -9699,7 +9699,7 @@ snapshots:
 
   type-fest@4.32.0: {}
 
-  type-fest@4.33.0: {}
+  type-fest@4.37.0: {}
 
   type-is@1.6.18:
     dependencies:
