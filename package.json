@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,17 +13,22 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/nuxt": "^1.4.0",
-    "@nuxt/image": "^1.9.0",
+    "@clerk/nuxt": "^1.4.1",
+    "@nuxt/image": "^1.10.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.1",
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "@types/node": "^20.16.8",
-    "eslint": "^9.11.1",
-    "nuxt": "^3.16.0",
+    "@antfu/eslint-config": "^4.10.1",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "@types/node": "^20.17.24",
+    "eslint": "^9.22.0",
+    "nuxt": "^3.16.1",
     "typescript": "latest"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@clerk/shared"
+    ]
   }
 }
