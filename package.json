@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/nuxt": "^1.4.1",
+    "@clerk/nuxt": "1.5.7-snapshot.v20250417032557",
     "@nuxt/image": "^1.10.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
@@ -28,7 +28,10 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "@clerk/shared"
+      "@clerk/shared",
+      "@parcel/watcher",
+      "esbuild",
+      "sharp"
     ]
   }
 }

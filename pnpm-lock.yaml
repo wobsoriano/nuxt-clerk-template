@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@clerk/nuxt':
-        specifier: ^1.4.1
-        version: 1.4.1(magicast@0.3.5)(react@19.0.0)(vue@3.5.13(typescript@5.8.2))
+        specifier: 1.5.7-snapshot.v20250417032557
+        version: 1.5.7-snapshot.v20250417032557(magicast@0.3.5)(react@19.0.0)(vue@3.5.13(typescript@5.8.2))
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(db0@0.3.1)(ioredis@5.6.0)(magicast@0.3.5)
@@ -230,16 +230,21 @@ packages:
   '@clack/prompts@0.10.0':
     resolution: {integrity: sha512-H3rCl6CwW1NdQt9rE3n373t7o5cthPv7yUoxF2ytZvyvlJv89C5RYMJu83Hed8ODgys5vpBU0GKxIRG83jd8NQ==}
 
-  '@clerk/backend@1.25.3':
-    resolution: {integrity: sha512-UakIGrxZzTIL7CWX8/RiWNlskKzkcW2dXifO+yUy6kefUlo0m6qRIx6WL/REzyCrbUMo+GfcQJnROiYsw9Uraw==}
+  '@clerk/backend@1.29.1-snapshot.v20250417032557':
+    resolution: {integrity: sha512-I+om9xhB/wPKDDYr+cjUyFYkBCC4K+/82O2jPxvGkTda7dKaLv5+tiARlQxAcqDZXrvVqlVSo9CtRr4iRmCyxw==}
+    engines: {node: '>=18.17.0'}
+    peerDependencies:
+      svix: ^1.62.0
+    peerDependenciesMeta:
+      svix:
+        optional: true
+
+  '@clerk/nuxt@1.5.7-snapshot.v20250417032557':
+    resolution: {integrity: sha512-RpLekyhYbE+b45ZvMxQ9zHHI8U/9tbFE1muyQ6er1jTPU5vXqmuRFYNqnnsmlKk0pjUmsbVuAx6GDW/9vh3FdA==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/nuxt@1.4.1':
-    resolution: {integrity: sha512-tUoCs4Oaz3r23I3jqIvZF+3oO9Q7HCRxn1jcE30yfMKVJbvNLn7dLpR7Wd3QSnMZBdldj6ryMRWspqUdxGN4Kg==}
-    engines: {node: '>=18.17.0'}
-
-  '@clerk/shared@3.0.2':
-    resolution: {integrity: sha512-d18X5GX70BLAZsJj6VkIjinnkht2Q/TJbhJbTlXZTvs7VOTax6mst5xaIXuS2EX8i/lyejbKg4j2whW7iAW4wA==}
+  '@clerk/shared@3.7.2-snapshot.v20250417032557':
+    resolution: {integrity: sha512-m0XJJAUCaFNND9KmBFrkTiFlAhCqXdhARUIFaFE2B8xpP102h4vaag3G/mfWaTWH73MNr93aXc/JvLgPzsWoHQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
@@ -250,12 +255,12 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/types@4.49.0':
-    resolution: {integrity: sha512-ps/hKza4BS1VYuAjCVgALwmJ5xWYDJapxS1Zj4uBjiJRsZovofNznekKwHNIeaicAZZa0Emi+TranGuAam+9kw==}
+  '@clerk/types@4.54.2-snapshot.v20250417032557':
+    resolution: {integrity: sha512-bB6ZdHaGA8/Kt/gpS8PBCIg0DgsFuKJwAQbjoGVT1MToIvaXbxuK79RQZLAGXxNQeQ11RlbeO9qKHp78EqsE2Q==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/vue@1.4.0':
-    resolution: {integrity: sha512-b+SmVQOF5bZVviOhwSK2O2RepoU7zKpB6hP10Qd/cxD4NsFkKrFVRstI486yM2StUFJFnw7Hk6PUe4BMUSQPbw==}
+  '@clerk/vue@1.6.3-snapshot.v20250417032557':
+    resolution: {integrity: sha512-8GsHt1kq6ILciTJH/d8du0duurC6imafdCSfTr23ajEx5fyUDhot7qY6x9VhuDFAwKcTSdlouEikSS2sgHjcvQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       vue: ^3.2.0
@@ -637,12 +642,16 @@ packages:
     resolution: {integrity: sha512-Perby8hJGUeCWad5oTVXb/Ibvp18ZCUC5PxHHu+acMDmVfnxSo48yqk7qNd09VkTF3LEzoEjNZpmW2ZWN0ry7A==}
     engines: {node: '>=18.12.0'}
 
-  '@nuxt/schema@3.16.0':
-    resolution: {integrity: sha512-uCpcqWO6C4P5c4vi1/sq5GyajO0EOp+ZWFtPrnKaJ1pXAhA+W1aMVxAjfi2f18QMJHuRXBz1TouFg1RmWA6FuA==}
-    engines: {node: ^14.18.0 || >=16.10.0}
+  '@nuxt/kit@3.16.2':
+    resolution: {integrity: sha512-K1SAUo2vweTfudKZzjKsZ5YJoxPLTspR5qz5+G61xtZreLpsdpDYfBseqsIAl5VFLJuszeRpWQ01jP9LfQ6Ksw==}
+    engines: {node: '>=18.12.0'}
 
   '@nuxt/schema@3.16.1':
     resolution: {integrity: sha512-Ri8bmT6MljpVR4DlXf9+acfgGaI4OTEdAzJU5aF2rJS78abtpnBxjXBG65kuhoL1LUlfKppDl8fTkUw5LM2JXQ==}
+    engines: {node: ^14.18.0 || >=16.10.0}
+
+  '@nuxt/schema@3.16.2':
+    resolution: {integrity: sha512-2HZPM372kuI/uw9VU/hOoYuzv803oZAtyoEKC5dQCQTKAQ293AjypF3WljMXUSReFS/hcbBSgGzYUPHr3Qo+pg==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   '@nuxt/telemetry@2.6.6':
@@ -4308,6 +4317,10 @@ packages:
     resolution: {integrity: sha512-oVUL7PSlyVV3QRhsdcyYEMaDX8HJyS/CnUonEJTYA3//bWO+o/4gG8F7auGWWWkrrxBQBYOO8DKe+C53ktpRXw==}
     engines: {node: '>=18.12.0'}
 
+  unimport@4.2.0:
+    resolution: {integrity: sha512-mYVtA0nmzrysnYnyb3ALMbByJ+Maosee2+WyE0puXl+Xm2bUwPorPaaeZt0ETfuroPOtG8jj1g/qeFZ6buFnag==}
+    engines: {node: '>=18.12.0'}
+
   unist-util-is@6.0.0:
     resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
 
@@ -4346,6 +4359,10 @@ packages:
 
   unplugin@2.2.1:
     resolution: {integrity: sha512-Q0YDhwViJaSnHf1cxLf+/VKhmfdr/ZAS/RL2GQVO0cAbAfJAVUef2bvNu+veyWcEPNwsTlFmMiFLjf8Xeqog8g==}
+    engines: {node: '>=18.12.0'}
+
+  unplugin@2.3.2:
+    resolution: {integrity: sha512-3n7YA46rROb3zSj8fFxtxC/PqoyvYQ0llwz9wtUPUutr9ig09C8gGo5CWCwHrUzlqC1LLR43kxp5vEIyH1ac1w==}
     engines: {node: '>=18.12.0'}
 
   unstorage@1.15.0:
@@ -4962,10 +4979,10 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@clerk/backend@1.25.3(react@19.0.0)':
+  '@clerk/backend@1.29.1-snapshot.v20250417032557(react@19.0.0)':
     dependencies:
-      '@clerk/shared': 3.0.2(react@19.0.0)
-      '@clerk/types': 4.49.0
+      '@clerk/shared': 3.7.2-snapshot.v20250417032557(react@19.0.0)
+      '@clerk/types': 4.54.2-snapshot.v20250417032557
       cookie: 1.0.2
       snakecase-keys: 8.0.1
       tslib: 2.8.1
@@ -4973,24 +4990,25 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/nuxt@1.4.1(magicast@0.3.5)(react@19.0.0)(vue@3.5.13(typescript@5.8.2))':
+  '@clerk/nuxt@1.5.7-snapshot.v20250417032557(magicast@0.3.5)(react@19.0.0)(vue@3.5.13(typescript@5.8.2))':
     dependencies:
-      '@clerk/backend': 1.25.3(react@19.0.0)
-      '@clerk/shared': 3.0.2(react@19.0.0)
-      '@clerk/types': 4.49.0
-      '@clerk/vue': 1.4.0(react@19.0.0)(vue@3.5.13(typescript@5.8.2))
-      '@nuxt/kit': 3.16.0(magicast@0.3.5)
-      '@nuxt/schema': 3.16.0
+      '@clerk/backend': 1.29.1-snapshot.v20250417032557(react@19.0.0)
+      '@clerk/shared': 3.7.2-snapshot.v20250417032557(react@19.0.0)
+      '@clerk/types': 4.54.2-snapshot.v20250417032557
+      '@clerk/vue': 1.6.3-snapshot.v20250417032557(react@19.0.0)(vue@3.5.13(typescript@5.8.2))
+      '@nuxt/kit': 3.16.2(magicast@0.3.5)
+      '@nuxt/schema': 3.16.2
       h3: 1.15.1
     transitivePeerDependencies:
       - magicast
       - react
       - react-dom
+      - svix
       - vue
 
-  '@clerk/shared@3.0.2(react@19.0.0)':
+  '@clerk/shared@3.7.2-snapshot.v20250417032557(react@19.0.0)':
     dependencies:
-      '@clerk/types': 4.49.0
+      '@clerk/types': 4.54.2-snapshot.v20250417032557
       dequal: 2.0.3
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
@@ -4999,14 +5017,14 @@ snapshots:
     optionalDependencies:
       react: 19.0.0
 
-  '@clerk/types@4.49.0':
+  '@clerk/types@4.54.2-snapshot.v20250417032557':
     dependencies:
       csstype: 3.1.3
 
-  '@clerk/vue@1.4.0(react@19.0.0)(vue@3.5.13(typescript@5.8.2))':
+  '@clerk/vue@1.6.3-snapshot.v20250417032557(react@19.0.0)(vue@3.5.13(typescript@5.8.2))':
     dependencies:
-      '@clerk/shared': 3.0.2(react@19.0.0)
-      '@clerk/types': 4.49.0
+      '@clerk/shared': 3.7.2-snapshot.v20250417032557(react@19.0.0)
+      '@clerk/types': 4.54.2-snapshot.v20250417032557
       vue: 3.5.13(typescript@5.8.2)
     transitivePeerDependencies:
       - react
@@ -5493,14 +5511,41 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/schema@3.16.0':
+  '@nuxt/kit@3.16.2(magicast@0.3.5)':
     dependencies:
-      consola: 3.4.0
+      c12: 3.0.2(magicast@0.3.5)
+      consola: 3.4.2
+      defu: 6.1.4
+      destr: 2.0.3
+      errx: 0.1.0
+      exsolve: 1.0.4
+      globby: 14.1.0
+      ignore: 7.0.3
+      jiti: 2.4.2
+      klona: 2.0.6
+      knitwork: 1.2.0
+      mlly: 1.7.4
+      ohash: 2.0.11
+      pathe: 2.0.3
+      pkg-types: 2.1.0
+      scule: 1.3.0
+      semver: 7.7.1
+      std-env: 3.8.1
+      ufo: 1.5.4
+      unctx: 2.4.1
+      unimport: 4.2.0
+      untyped: 2.0.0
+    transitivePeerDependencies:
+      - magicast
+
+  '@nuxt/schema@3.16.1':
+    dependencies:
+      consola: 3.4.2
       defu: 6.1.4
       pathe: 2.0.3
       std-env: 3.8.1
 
-  '@nuxt/schema@3.16.1':
+  '@nuxt/schema@3.16.2':
     dependencies:
       consola: 3.4.2
       defu: 6.1.4
@@ -9805,6 +9850,23 @@ snapshots:
       unplugin: 2.2.1
       unplugin-utils: 0.2.4
 
+  unimport@4.2.0:
+    dependencies:
+      acorn: 8.14.1
+      escape-string-regexp: 5.0.0
+      estree-walker: 3.0.3
+      local-pkg: 1.1.1
+      magic-string: 0.30.17
+      mlly: 1.7.4
+      pathe: 2.0.3
+      picomatch: 4.0.2
+      pkg-types: 2.1.0
+      scule: 1.3.0
+      strip-literal: 3.0.0
+      tinyglobby: 0.2.12
+      unplugin: 2.3.2
+      unplugin-utils: 0.2.4
+
   unist-util-is@6.0.0:
     dependencies:
       '@types/unist': 3.0.3
@@ -9866,6 +9928,12 @@ snapshots:
   unplugin@2.2.1:
     dependencies:
       acorn: 8.14.1
+      webpack-virtual-modules: 0.6.2
+
+  unplugin@2.3.2:
+    dependencies:
+      acorn: 8.14.1
+      picomatch: 4.0.2
       webpack-virtual-modules: 0.6.2
 
   unstorage@1.15.0(db0@0.3.1)(ioredis@5.6.0):
