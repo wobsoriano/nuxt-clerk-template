@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@clerk/nuxt@1.7.4':
+    hash: 03ed1f46ccf7b96ffea39567618929dd8f65cea076da09798bb42cedc883df2d
+    path: patches/@clerk__nuxt@1.7.4.patch
+
 importers:
 
   .:
     dependencies:
       '@clerk/nuxt':
         specifier: 1.7.4
-        version: 1.7.4(magicast@0.3.5)(react@19.0.0)(vue@3.5.17(typescript@5.8.3))
+        version: 1.7.4(patch_hash=03ed1f46ccf7b96ffea39567618929dd8f65cea076da09798bb42cedc883df2d)(magicast@0.3.5)(react@19.0.0)(vue@3.5.17(typescript@5.8.3))
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(db0@0.3.2)(ioredis@5.6.1)(magicast@0.3.5)
@@ -5148,7 +5153,7 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/nuxt@1.7.4(magicast@0.3.5)(react@19.0.0)(vue@3.5.17(typescript@5.8.3))':
+  '@clerk/nuxt@1.7.4(patch_hash=03ed1f46ccf7b96ffea39567618929dd8f65cea076da09798bb42cedc883df2d)(magicast@0.3.5)(react@19.0.0)(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@clerk/backend': 2.3.1(react@19.0.0)
       '@clerk/shared': 3.10.1(react@19.0.0)

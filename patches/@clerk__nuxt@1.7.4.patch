@@ -1,0 +1,21 @@
+diff --git a/dist/runtime/server/clerkMiddleware.js b/dist/runtime/server/clerkMiddleware.js
+index dfd7e1e9703e449265d475839fb51ec2c1d8d234..b832b6ea2004fa6d4af7a6dbc470f7b36f3c5a7e 100644
+--- a/dist/runtime/server/clerkMiddleware.js
++++ b/dist/runtime/server/clerkMiddleware.js
+@@ -17,11 +17,11 @@ const clerkMiddleware = (...args) => {
+     const requestState = await clerkClient(event).authenticateRequest(clerkRequest, options);
+     const locationHeader = requestState.headers.get(constants.Headers.Location);
+     if (locationHeader) {
+-      handleNetlifyCacheInDevInstance({
+-        locationHeader,
+-        requestStateHeaders: requestState.headers,
+-        publishableKey: requestState.publishableKey
+-      });
++      // handleNetlifyCacheInDevInstance({
++      //   locationHeader,
++      //   requestStateHeaders: requestState.headers,
++      //   publishableKey: requestState.publishableKey
++      // });
+       return new Response(null, { status: 307, headers: requestState.headers });
+     }
+     if (requestState.status === AuthStatus.Handshake) {
