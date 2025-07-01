@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/nuxt": "1.5.7-snapshot.v20250417032557",
+    "@clerk/nuxt": "1.7.4",
     "@nuxt/image": "^1.10.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
@@ -23,7 +23,7 @@
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@types/node": "^20.17.24",
     "eslint": "^9.22.0",
-    "nuxt": "^3.16.1",
+    "nuxt": "^3.17.6",
     "typescript": "latest"
   },
   "pnpm": {
