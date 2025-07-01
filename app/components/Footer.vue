@@ -110,7 +110,7 @@
               </clipPath>
             </defs>
           </svg>
-          X (formally Twitter)
+          X (formerly Twitter)
         </a>
       </li>
       <li>
