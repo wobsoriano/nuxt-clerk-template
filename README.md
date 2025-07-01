@@ -13,7 +13,11 @@ This template allows you to get started with Clerk and Nuxt in a matter of minut
 
 ## Demo
 
-A hosted demo of this example is available at [nuxt-clerk-template.vercel.app](https://nuxt-clerk-template.vercel.app/)
+A hosted demo of this example is available at:
+
+- https://nuxt-clerk-template.vercel.app
+- https://nuxt-clerk-template.pages.dev
+- https://nuxt-clerk-template.netlify.app
 
 ## Running the template
 
