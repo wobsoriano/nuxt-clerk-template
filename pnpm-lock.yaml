@@ -14,11 +14,14 @@ importers:
       '@nuxt/image':
         specifier: ^1.10.0
         version: 1.10.0(db0@0.3.2)(ioredis@5.6.1)(magicast@0.3.5)
+      nuxt:
+        specifier: ^3.17.6
+        version: 3.17.6(@parcel/watcher@2.5.0)(@types/node@20.17.24)(@vue/compiler-sfc@3.5.17)(db0@0.3.2)(eslint@9.22.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.44.1)(terser@5.37.0)(typescript@5.8.3)(vite@6.3.5(@types/node@20.17.24)(jiti@2.4.2)(terser@5.37.0)(yaml@2.8.0))(yaml@2.8.0)
       vue:
-        specifier: ^3.5.13
+        specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
       vue-router:
-        specifier: ^4.5.0
+        specifier: ^4.5.1
         version: 4.5.1(vue@3.5.17(typescript@5.8.3))
     devDependencies:
       '@antfu/eslint-config':
@@ -33,9 +36,6 @@ importers:
       eslint:
         specifier: ^9.22.0
         version: 9.22.0(jiti@2.4.2)
-      nuxt:
-        specifier: ^3.17.6
-        version: 3.17.6(@parcel/watcher@2.5.0)(@types/node@20.17.24)(@vue/compiler-sfc@3.5.17)(db0@0.3.2)(eslint@9.22.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.44.1)(terser@5.37.0)(typescript@5.8.3)(vite@6.3.5(@types/node@20.17.24)(jiti@2.4.2)(terser@5.37.0)(yaml@2.8.0))(yaml@2.8.0)
       typescript:
         specifier: latest
         version: 5.8.3

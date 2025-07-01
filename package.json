@@ -15,15 +15,15 @@
   "dependencies": {
     "@clerk/nuxt": "1.7.4",
     "@nuxt/image": "^1.10.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "nuxt": "^3.17.6",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.10.1",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@types/node": "^20.17.24",
     "eslint": "^9.22.0",
-    "nuxt": "^3.17.6",
     "typescript": "latest"
   },
   "pnpm": {
