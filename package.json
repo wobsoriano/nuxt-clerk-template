@@ -15,7 +15,6 @@
     "@clerk/nuxt": "1.7.4",
     "@nuxt/image": "^1.10.0",
     "@oxc-parser/binding-linux-x64-gnu": "^0.75.0",
-    "@swc/core": "^1.12.9",
     "nuxt": "^3.17.6",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
@@ -27,10 +26,5 @@
     "eslint": "^9.22.0",
     "typescript": "latest"
   },
-  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4",
-  "pnpm": {
-    "patchedDependencies": {
-      "@clerk/nuxt@1.7.4": "patches/@clerk__nuxt@1.7.4.patch"
-    }
-  }
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
 }
