@@ -34,11 +34,11 @@
     <ul class="flex gap-2 ml-auto">
       <li>
         <a
-          href="https://vue-clerk.com"
+          href="https://clerk.com/docs/quickstarts/nuxt"
           target="_blank"
           class="flex items-center gap-2 font-medium text-[0.8125rem] rounded-full px-3 py-2 hover:bg-gray-100"
         >
-          Vue Clerk Docs
+          Nuxt Clerk Docs
           <svg
             width="16"
             height="16"
