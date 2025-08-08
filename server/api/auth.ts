@@ -1,7 +1,7 @@
-import { clerkClient, getAuth } from '@clerk/nuxt/server'
+import { clerkClient } from '@clerk/nuxt/server'
 
 export default eventHandler(async (event) => {
-  const { userId } = getAuth(event)
+  const { userId } = event.context.auth()
 
   if (!userId) {
     throw createError({
