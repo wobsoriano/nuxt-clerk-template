@@ -97,7 +97,7 @@ const UserDetails = defineComponent(() => {
               </div>
 
               <div class="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
-                <Row desc="Email" value={user.value.emailAddresses[0].emailAddress}>
+                <Row desc="Email" value={user.value.emailAddresses[0]!.emailAddress}>
                   <PointerC label="user.emailAddresses[0].emailAddress" />
                 </Row>
                 <Row desc="Last signed in" value={formatDate(user.value.lastSignInAt!)}>
