@@ -1,5 +1,5 @@
 const isProtectedPage = createRouteMatcher(['/dashboard'])
-const isGuestPage = createRouteMatcher(['/sign-(in|up)'])
+const isGuestPage = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
 
 export default defineNuxtRouteMiddleware((to) => {
   const { userId } = useAuth()
