@@ -12,19 +12,19 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@clerk/nuxt": "1.8.3",
-    "@nuxt/image": "^1.10.0",
+    "@clerk/nuxt": "^1.13.5",
+    "@nuxt/image": "^2.0.0",
     "@oxc-parser/binding-linux-x64-gnu": "^0.81.0",
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.10.1",
-    "@nuxtjs/tailwindcss": "^6.13.2",
-    "@types/node": "^20.17.24",
-    "eslint": "^9.22.0",
+    "@antfu/eslint-config": "^4.19.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^20.19.25",
+    "eslint": "^9.39.1",
     "typescript": "latest"
   },
-  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
+  "packageManager": "pnpm@10.24.0"
 }
