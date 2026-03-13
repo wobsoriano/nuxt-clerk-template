@@ -36,19 +36,19 @@ import { CARDS } from '~/consts/cards'
           management powered by Clerk.
         </p>
         <div class="relative flex gap-3">
-          <SignedIn>
+          <Show when="signed-in">
             <NuxtLink
               href="/dashboard"
               class="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold"
             >
               Dashboard
             </NuxtLink>
-          </SignedIn>
-          <SignedOut>
+          </Show>
+          <Show when="signed-out">
             <SignInButton class="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold">
               Sign In
             </SignInButton>
-          </SignedOut>
+          </Show>
           <NuxtLink
             href="/#features"
             class="px-4 py-2 rounded-full text-[#131316] text-sm font-semibold bg-[#F7F7F8]"
